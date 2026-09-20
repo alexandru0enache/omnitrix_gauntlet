@@ -1,0 +1,753 @@
+﻿--------- beginning of main
+09-08 11:50:44.145   337  9679 I android.system.suspend-service: !@SystemSuspend: wakeup_count+
+--------- beginning of system
+09-08 11:50:44.363   599  3782 D ActivityTaskManager: startActivityAsUser: callingPid=30249, callingUid=2000, caller=com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature:27 com.android.server.am.ActivityManagerShellCommand.runStartActivity:508 com.android.server.am.ActivityManagerShellCommand.onCommand:2012 com.android.modules.utils.BasicShellCommandHandler.exec:97 android.os.ShellCommand.exec:38 com.android.server.am.ActivityManagerService.onShellCommand:14 android.os.Binder.shellCommand:1151 
+09-08 11:50:44.364   599  3782 W ActivityTaskManager: callingPackage for (uid=2000, pid=30249) has no WPC
+09-08 11:50:44.366   599  3782 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10205, packageName = null, attributionTag = null, token = android.os.Binder@6fa552, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-08 11:50:44.366   599  3782 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+09-08 11:50:44.367   599  3782 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+09-08 11:50:44.368   599  3782 V WindowManager: Transition is created, t=TransitionRecord{4d7f03b id=-1 type=OPEN flags=0x0}, caller=com.android.server.wm.ActivityStarter.executeRequest:286 com.android.server.wm.ActivityStarter.execute:979 com.android.server.wm.ActivityTaskManagerService.startActivityAsUser:37 com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature:27 com.android.server.am.ActivityManagerShellCommand.runStartActivity:508 
+09-08 11:50:44.369   599  3782 D BLASTSyncEngine: SyncGroup is created, id=113, name=Transition-OPEN, caller=com.android.server.wm.TransitionController.moveToCollecting:78 com.android.server.wm.ActivityStarter.executeRequest:287 com.android.server.wm.ActivityStarter.execute:979 com.android.server.wm.ActivityTaskManagerService.startActivityAsUser:37 com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature:27 com.android.server.am.ActivityManagerShellCommand.runStartActivity:508 com.android.server.am.ActivityManagerShellCommand.onCommand:2012 
+09-08 11:50:44.369   599  3782 W BLASTSyncEngine: setSyncMethod, id=113, method=0, caller=com.android.server.wm.TransitionController.moveToCollecting:90 com.android.server.wm.ActivityStarter.executeRequest:287 com.android.server.wm.ActivityStarter.execute:979 
+09-08 11:50:44.370   599  3782 V WindowManager: Start collecting in Transition: TransitionRecord{4d7f03b id=113 type=OPEN flags=0x0}, caller=com.android.server.wm.ActivityStarter.executeRequest:287 com.android.server.wm.ActivityStarter.execute:979 com.android.server.wm.ActivityTaskManagerService.startActivityAsUser:37 com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature:27 com.android.server.am.ActivityManagerShellCommand.runStartActivity:508 
+09-08 11:50:44.370   599  3782 V WindowManager: Collecting in transition 113: ActivityRecord{63271768 u0 com.omnitrix.watchface/.PermissionRequestActivity, caller=com.android.server.wm.TransitionController.collect:6 com.android.server.wm.ActivityStarter.executeRequest:320 com.android.server.wm.ActivityStarter.execute:979 com.android.server.wm.ActivityTaskManagerService.startActivityAsUser:37 com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature:27 
+09-08 11:50:44.371   599  3782 I Pageboost: moveTaskToFront : 10205:com.omnitrix.watchface
+09-08 11:50:44.372   470   506 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 113527  [475 / 1]    HINT : POWER_HINT_APP_LAUNCH    list : 
+09-08 11:50:44.372  1390  1390 E pageboostd: Received HALT command code 2
+09-08 11:50:44.375   599  3782 V WindowManager: Checking theme of starting window: 0x7f0e0131
+09-08 11:50:44.375   599  3782 V WindowManager: Translucent=false Floating=false ShowWallpaper=false Disable=false
+09-08 11:50:44.375   599  3782 V WindowManager: Creating SnapshotStartingData
+09-08 11:50:44.375   599  3782 V WindowManager: Add starting ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761}: startingData=SnapshotStartingData{2471cb1 removeAfterTransaction= 0}
+09-08 11:50:44.376   599  3782 V WindowManager: Added starting ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761}: startingWindow=null startingView=com.android.server.wm.StartingSurfaceController$StartingSurface@4eb5596
+09-08 11:50:44.379   599  3782 V WindowManager: Collecting in transition 113: ActivityRecord{63271768 u0 com.omnitrix.watchface/.PermissionRequestActivity t-1}, caller=com.android.server.wm.Transition.collectExistenceChange:39 com.android.server.wm.ActivityStarter.handleStartResult:266 com.android.server.wm.ActivityStarter.executeRequest:327 com.android.server.wm.ActivityStarter.execute:979 com.android.server.wm.ActivityTaskManagerService.startActivityAsUser:37 
+09-08 11:50:44.380   599  3782 V WindowManager: Requesting StartTransition: TransitionRecord{4d7f03b id=113 type=OPEN flags=0x0 c=[
+09-08 11:50:44.380   599  3782 V WindowManager:    ChangeInfo{44b5517 container=ActivityRecord{63271768 u0 com.omnitrix.watchface/.PermissionRequestActivity t-1} flags=0x0}
+09-08 11:50:44.380   599  3782 V WindowManager: ]
+09-08 11:50:44.380   599  3782 V WindowManager: }, caller=com.android.server.wm.ActivityStarter.handleStartResult:435 com.android.server.wm.ActivityStarter.executeRequest:327 com.android.server.wm.ActivityStarter.execute:979 com.android.server.wm.ActivityTaskManagerService.startActivityAsUser:37 com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature:27 
+09-08 11:50:44.381   599  3782 V SystemTransitions: Transition requested (#113): Token{eca6d04 TransitionRecord{4d7f03b id=113 type=OPEN flags=0x0 c=[
+09-08 11:50:44.381   599  3782 V SystemTransitions:    ChangeInfo{44b5517 container=ActivityRecord{63271768 u0 com.omnitrix.watchface/.PermissionRequestActivity t-1} flags=0x0}
+09-08 11:50:44.381   599  3782 V SystemTransitions: ]
+09-08 11:50:44.381   599  3782 V SystemTransitions: }}TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=6761 effectiveUid=10205 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.omnitrix.watchface/.PermissionRequestActivity } baseActivity=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.PermissionRequestActivity} topActivity=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity} origActivity=null realActivity=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.PermissionRequestActivity} numActivities=4 lastActiveTime=165631535 supportsMultiWindow=false resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{7a9a99a Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{147604e com.omnitrix.watchface.DebugPreviewActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(54, 54 - 342, 342) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 396, 396) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 113 }
+09-08 11:50:44.382   599  3782 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x4 cmp=com.omnitrix.watchface/.PermissionRequestActivity} with LAUNCH_MULTIPLE from uid 2000 (BAL_ALLOW_PERMISSION) result code=2
+09-08 11:50:44.383   599  3782 D ActivityTaskManager: flg=0x10400000 xflg=0x4 cmp=com.omnitrix.watchface/.PermissionRequestActivity
+09-08 11:50:44.386   599   661 V WindowManager: Starting Transition 113, caller=com.android.server.wm.WindowOrganizerController.startTransition:45 com.android.server.wm.SystemTransitions$$ExternalSyntheticLambda0.run:21 android.os.Handler.handleCallback:995 
+09-08 11:50:44.390  1035  1035 I SecWatchFacePickerController: [WatchFacePickerModule] onPause(12) > onPause
+09-08 11:50:44.390  1035  1035 I SecTiltDetectManagerModule: [SecTiltDetectManagerModule] onStateChanged(17) > onHomeActivityLifecycle ON_PAUSE
+09-08 11:50:44.390  1035  1035 I SecTiltDetectManagerModule: [SecTiltDetectManagerModule] updateTiltDetectorListener(58) > updateTiltDetectorListener STATE : isScreenOn = false Lifecycle.Event = ON_PAUSE isWearing = true UiMode = MODE_WATCH_FACE
+09-08 11:50:44.391  1035  1035 I WNoti   : [NotificationHorizontalPageScroller] onStateChanged(103) > ON_PAUSE: UiMode: MODE_WATCH_FACE
+09-08 11:50:44.393  1035  1035 I WNoti   : [SetViewToggleButtonReceiver$$ExternalSyntheticOutline0] m(13) > isSysUiOnTop: true
+09-08 11:50:44.394  1035  1035 I WNoti   : [NotificationHorizontalPageScroller] onStateChanged(133) > sensor-disconnected: In MODE_WATCH_FACE, sysui-top?: true
+09-08 11:50:44.394  1048 29418 D WearServices: [SynchronousComplicationSessionController]onWatchFaceStateChanged isWfInteractive=false
+09-08 11:50:44.394  1035  1035 I SecWFOverlayController: [SchoolModeStateImpl$$ExternalSyntheticOutline0] m(8) > isResumed: false screenLockEnabled: false
+09-08 11:50:44.395   517   517 I SurfaceFlinger: SFWD update time=20154609269005
+09-08 11:50:44.396   517   517 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+09-08 11:50:44.396  1035  1035 I SecWatchFaceOverlayUi: [SetViewToggleButtonReceiver$$ExternalSyntheticOutline0] m(13) > setResumeState : false
+09-08 11:50:44.397  1035  1035 I SecWatchFaceOverlayUi: [SecWatchFaceOverlayUi] updateOngoingActivityAnimation(43) > stop lottie icon animation
+09-08 11:50:44.397  1035  1035 I SecWatchFaceOverlayUi: [SecWatchFaceOverlayUi] updateOngoingActivityAnimation(121) > Container : com.google.android.clockwork.sysui.mainui.module.watchfaceoverlay2.container.WfImageButtonContainer@97c585d
+09-08 11:50:44.398  1035  1035 I SecWatchFaceOverlayUi: [SecWatchFaceOverlayUi] updateOngoingActivityAnimation(162) > stop icon animation
+09-08 11:50:44.398  1035  1035 W SysUI   : [SecSysUiBaseActivity] onPause(5) > [SysUiActivity] before onPause().
+09-08 11:50:44.399  1035  1035 W SysUI   : [SecSysUiBaseActivity] onPause(13) > [SysUiActivity] end onPause().
+09-08 11:50:44.400   599  5567 V WindowManager: Collecting in transition 113: ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761}, caller=com.android.server.wm.TransitionController.collect:6 com.android.server.wm.ActivityRecord.setVisibility:131 com.android.server.wm.TaskFragment.resumeTopActivity:824 com.android.server.wm.Task.resumeTopActivityInnerLocked:114 com.android.server.wm.Task.resumeTopActivityUncheckedLocked:22 
+09-08 11:50:44.400   599  5567 D WindowManager: prepareSync <SYNC_STATE_WAITING_FOR_DRAW>, prepareSyncSeqId=0, w=Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:44.402   599  5567 V WindowManager: Setting visibility of Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}: true, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:19 com.android.server.wm.WindowToken.setClientVisible:48 com.android.server.wm.ActivityRecord.setVisibility:464 com.android.server.wm.TaskFragment.resumeTopActivity:824 com.android.server.wm.Task.resumeTopActivityInnerLocked:114 
+09-08 11:50:44.402   599  5567 D InputDispatcher: Focused application(0): ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761}
+09-08 11:50:44.403 29388 29388 I VRI[DebugPreviewActivity]@40fde36: handleAppVisibility mAppVisible = false visible = true
+09-08 11:50:44.403   599  5567 V WindowManager: Changing focus from Window{85d27ce u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity} to null displayId=0 Callers=com.android.server.wm.ActivityTaskManagerService.setLastResumedActivityUncheckLocked:173 com.android.server.wm.ActivityTaskSupervisor.updateTopResumedActivityIfNeeded:49 com.android.server.wm.TaskFragment.setResumedActivity:29 com.android.server.wm.ActivityRecord.setState:100 
+09-08 11:50:44.405   599  5567 V WindowManager: Collecting in transition 113: ActivityRecord{70273967 u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity t2}, caller=com.android.server.wm.TransitionController.collect:6 com.android.server.wm.ActivityRecord.setVisibility:131 com.android.server.wm.ActivityRecord.makeInvisible:31 com.android.server.wm.EnsureActivitiesVisibleHelper.process:472 com.android.server.wm.TaskFragment.updateActivityVisibilities:8 
+09-08 11:50:44.405   599  5567 D WindowManager: prepareSync <SYNC_STATE_WAITING_FOR_DRAW>, prepareSyncSeqId=0, w=Window{85d27ce u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity}
+09-08 11:50:44.405   599  5567 V WindowManager: Collecting in transition 113: WallpaperWindowToken{199320e showWhenLocked=true}, caller=com.android.server.wm.Transition.collect:276 com.android.server.wm.TransitionController.collect:6 com.android.server.wm.ActivityRecord.setVisibility:131 com.android.server.wm.ActivityRecord.makeInvisible:31 com.android.server.wm.EnsureActivitiesVisibleHelper.process:472 
+09-08 11:50:44.407   599  5567 V WindowManager: rotationForOrientation(orient=SCREEN_ORIENTATION_UNSPECIFIED (-1), last=ROTATION_0 (0)); user=ROTATION_0 (0) USER_ROTATION_LOCKED
+09-08 11:50:44.407   599  5567 D WindowManager: rotationForOrientation, orientationSource=null
+09-08 11:50:44.407   599  5567 D WindowManager: rotationForOrientation, orientationSource=null
+09-08 11:50:44.407   599  5567 V WindowManager: Computed rotation=ROTATION_0 (0) for display id=0 based on lastOrientation=SCREEN_ORIENTATION_UNSPECIFIED (-1) and oldRotation=ROTATION_0 (0), caller=com.android.server.wm.DisplayRotation.updateOrientation:78 com.android.server.wm.DisplayContent.updateOrientation:197 com.android.server.wm.RootWindowContainer.ensureVisibilityAndConfig:12 com.android.server.wm.TaskFragment.resumeTopActivity:884 com.android.server.wm.Task.resumeTopActivityInnerLocked:114 com.android.server.wm.Task.resumeTopActivityUncheckedLocked:22 
+09-08 11:50:44.410   599  5567 V WindowManager: Collecting in transition 113: WallpaperWindowToken{199320e showWhenLocked=true}, caller=com.android.server.wm.TransitionController.collect:6 com.android.server.wm.WallpaperWindowToken.setVisibility:29 com.android.server.wm.WallpaperController.adjustWallpaperWindows:712 com.android.server.wm.RootWindowContainer.applySurfaceChangesTransaction$1:141 com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace:52 
+09-08 11:50:44.413 29388 29388 I VRI[DebugPreviewActivity]@40fde36: stopped(false) old = true
+09-08 11:50:44.413 29388 29388 D ViewRootImpl: Skipping stats log for color mode
+09-08 11:50:44.420   599   659 D PkgPredictorService-SecIpmManagerServiceImpl: onForegroundActivitiesChanged pid:29388 uid:10205
+09-08 11:50:44.421   599   868 V PkgPredictorService-SecIpmManagerServiceImpl: discard foreground app:com.omnitrix.watchface 0|true
+09-08 11:50:44.423  1106  1106 D SYSTEM_UI: QuickpanelLockStateManager.updateLockState(43): Task focus is changed to : com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity
+09-08 11:50:44.423  1106  1106 D SYSTEM_UI: QuickpanelLockStateManager.isSetupWizardCompleted(27): value: default
+09-08 11:50:44.425  1106  1106 W SYSTEM_UI: QuickpanelView.setLock(61): setLock: false
+09-08 11:50:44.425  1106  1106 W SYSTEM_UI: QuickpanelInputMonitor.start(7): already started
+09-08 11:50:44.429   517   517 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+09-08 11:50:44.430   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.431   517   570 D SurfaceFlinger: [input] setFocusedWindow: <null>
+09-08 11:50:44.431   599  5567 D InputDispatcher: Once focus requested (0): <null>
+09-08 11:50:44.431   599  5567 D InputDispatcher: Focus request (0): <null> but waiting because NO_WINDOW
+09-08 11:50:44.431   599  5567 D InputDispatcher: Focus left window (0): 85d27ce com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity
+09-08 11:50:44.433   599  1419 V WindowManager: Relayout Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}: viewVisibility=0 req=396x396 ty=1 d0
+09-08 11:50:44.434   517   539 I SurfaceFlinger: id=634 createSurf flag=44004, com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity#634
+09-08 11:50:44.435   599  1419 V WindowManager: Changing focus from null to Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity} displayId=0 Callers=com.android.server.wm.Session.relayout:1324 android.view.IWindowSession$Stub.onTransact:721 com.android.server.wm.Session.onTransact:1 android.os.Binder.execTransactInternal:1421 
+09-08 11:50:44.440   599  1419 V WindowManager: Relayout hash=3718e81, pid=29388, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION wanim=0x1030302
+09-08 11:50:44.440   599  1419 V WindowManager:   fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+09-08 11:50:44.440   599  1419 V WindowManager:   pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+09-08 11:50:44.440   599  1419 V WindowManager:   bhv=DEFAULT
+09-08 11:50:44.440   599  1419 V WindowManager:   fitSides=
+09-08 11:50:44.440   599  1419 V WindowManager:   frameRateBoostOnTouch=true
+09-08 11:50:44.440   599  1419 V WindowManager:   dvrrWindowFrameRateHint=true}
+09-08 11:50:44.444 29388 29388 I VRI[DebugPreviewActivity]@40fde36: Relayout returned: old=(0,0,396,396) new=(0,0,396,396) req=(396,396)0 dur=10 res=0x3 s={true 0xe6474480} ch=true seqId=0
+09-08 11:50:44.448   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.457  1035  1035 I VRI[SysUiActivity]@bcb989c: MSG_WINDOW_FOCUS_CHANGED 0 0
+09-08 11:50:44.460 29388 29503 D BLASTBufferQueue: [VRI[DebugPreviewActivity]@40fde36#6](f:0,a:0) onFrameAvailable the first frame is available
+09-08 11:50:44.462   517   517 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+09-08 11:50:44.463   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.465   517   570 D SurfaceFlinger: [input] setFocusedWindow: 3718e81 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity
+09-08 11:50:44.465   599  3050 D InputDispatcher: Once focus requested (0): 3718e81 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity
+09-08 11:50:44.465   599  3050 D InputDispatcher: Focus request (0): 3718e81 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity but waiting because NO_WINDOW
+09-08 11:50:44.466 29388 29388 I VRI[DebugPreviewActivity]@40fde36: reportDrawFinished seqId=0 fn=1
+09-08 11:50:44.467   599  1419 D WindowManager: finishDrawingWindow: Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity} mDrawState=DRAW_PENDING seqId=0
+09-08 11:50:44.469   470   506 I HYPER-HAL: [RequestManager.cpp]acquire(): Acquired ID : 114005  [475 / 2]    HINT : POWER_HINT_APP_LAUNCH_TAIL    list : 
+09-08 11:50:44.471   470   506 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 113527
+09-08 11:50:44.475   599   662 V WindowManager: Clearing startingData for token=ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761}
+09-08 11:50:44.475   599   662 V WindowManager: SyncGroup 113: Finished!
+09-08 11:50:44.475  1106  1106 D SYSTEM_UI: QuickpanelLockStateManager.updateLockState(43): Task focus is changed to : com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity
+09-08 11:50:44.476  1106  1106 D SYSTEM_UI: QuickpanelLockStateManager.isSetupWizardCompleted(27): value: default
+09-08 11:50:44.476   599   662 V WindowManager: performShowLocked: mDrawState=HAS_DRAWN in Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:44.476  1106  1106 W SYSTEM_UI: QuickpanelView.setLock(61): setLock: false
+09-08 11:50:44.476  1106  1106 W SYSTEM_UI: QuickpanelInputMonitor.start(7): already started
+09-08 11:50:44.476   599   662 V WindowManager:   Final targets: [ChangeInfo{eff3522 container=Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface} flags=0x30}, ChangeInfo{f262bb3 container=Task{648ec88 #1 type=home} flags=0x10}, ChangeInfo{4035570 container=WallpaperWindowToken{199320e showWhenLocked=true} flags=0x0}]
+09-08 11:50:44.477   517   712 I SurfaceFlinger: id=635 createSurf flag=84004, Transition Root: Task=6761#635
+09-08 11:50:44.479   599   662 I SurfaceControlRegistry: show, t=StartTransaction_SyncId<113> sc=ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761}, caller=android.view.SurfaceControl$Transaction.show:3378 com.android.server.wm.Transition.onTransactionReady:1785 com.android.server.wm.BLASTSyncEngine$SyncGroup.finishNow:238 com.android.server.wm.BLASTSyncEngine.onSurfacePlacement:303 com.android.server.wm.RootWindowContainer.performSurfacePlacementNoTrace:971 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:161 
+09-08 11:50:44.481   599   662 V SystemTransitions: onTransitionReady (#113Token{eca6d04 TransitionRecord{4d7f03b id=113 type=OPEN flags=0x0 c=[
+09-08 11:50:44.481   599   662 V SystemTransitions:    ChangeInfo{4035570 container=WallpaperWindowToken{199320e showWhenLocked=true} flags=0x0}
+09-08 11:50:44.481   599   662 V SystemTransitions:    ChangeInfo{44b5517 container=ActivityRecord{63271768 u0 com.omnitrix.watchface/.PermissionRequestActivity t-1} flags=0x0}
+09-08 11:50:44.481   599   662 V SystemTransitions:    ChangeInfo{b7f816e container=ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761} flags=0x0}
+09-08 11:50:44.481   599   662 V SystemTransitions:    ChangeInfo{7cdd00f container=ActivityRecord{70273967 u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity t2} flags=0x0}
+09-08 11:50:44.481   599   662 V SystemTransitions:    ChangeInfo{f262bb3 container=Task{648ec88 #1 type=home} flags=0x10}
+09-08 11:50:44.481   599   662 V SystemTransitions:    ChangeInfo{2a0589c container=Task{6a5d02b #2 type=home A=10045:com.samsung.android.wearable.sysui nonResizable} flags=0x10}
+09-08 11:50:44.481   599   662 V SystemTransitions:    ChangeInfo{ded72a5 container=DefaultTaskDisplayArea_d0@155633296 flags=0x0}
+09-08 11:50:44.481   599   662 V SystemTransitions:    ChangeInfo{7a6467a container=Display{#0 state=DOZE_SUSPEND size=396x396 ROTATION_0} flags=0x0}
+09-08 11:50:44.481   599   662 V SystemTransitions:    ChangeInfo{eff3522 container=Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface} flags=0x30}
+09-08 11:50:44.481   599   662 V SystemTransitions: ]
+09-08 11:50:44.481   599   662 V SystemTransitions: }}: {id=113 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-08 11:50:44.481   599   662 V SystemTransitions:         {WCT{RemoteToken{7a9a99a Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface}}} m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=6761)/@0x7a15e2b sb=Rect(0, 0 - 396, 396) eb=Rect(0, 0 - 396, 396) epz=Point(396, 396) d=0 taskParent=-1},
+09-08 11:50:44.481   599   662 V SystemTransitions:         {WCT{RemoteToken{311a59d Task{648ec88 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0xaa86288 sb=Rect(0, 0 - 396, 396) eb=Rect(0, 0 - 396, 396) epz=Point(396, 396) d=0 taskParent=-1},
+09-08 11:50:44.481   599   662 V SystemTransitions:         {m=TO_BACK f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{199320e showWhenLocked=false})/@0x4e79421 sb=Rect(0, 0 - 396, 396) eb=Rect(0, 0 - 396, 396) epz=Point(396, 396) d=0}
+09-08 11:50:44.481   599   662 V SystemTransitions:     ]}
+09-08 11:50:44.481   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.481   599   662 I SurfaceControlRegistry: hide, t=FinishTransaction_SyncId<113> sc=WallpaperWindowToken{199320e showWhenLocked=false}, caller=android.view.SurfaceControl$Transaction.hide:3404 com.android.server.wm.SystemTransitions.dispatchReady:538 com.android.server.wm.TransitionController$SystemTransitionPlayer.onTransitionReady:254 com.android.server.wm.Transition.onTransactionReady:2525 com.android.server.wm.BLASTSyncEngine$SyncGroup.finishNow:238 com.android.server.wm.BLASTSyncEngine.onSurfacePlacement:303 
+09-08 11:50:44.483   599   662 I SurfaceControlRegistry: hide, t=FinishTransaction_SyncId<113> sc=Task=1, caller=android.view.SurfaceControl$Transaction.hide:3404 com.android.server.wm.SystemTransitions.dispatchReady:538 com.android.server.wm.TransitionController$SystemTransitionPlayer.onTransitionReady:254 com.android.server.wm.Transition.onTransactionReady:2525 com.android.server.wm.BLASTSyncEngine$SyncGroup.finishNow:238 com.android.server.wm.BLASTSyncEngine.onSurfacePlacement:303 
+09-08 11:50:44.484   599   662 I SurfaceControlRegistry: show, t=StartTransaction_SyncId<113> sc=Task=6761, caller=android.view.SurfaceControl$Transaction.show:3378 com.android.server.wm.SystemTransitions.dispatchReady:542 com.android.server.wm.TransitionController$SystemTransitionPlayer.onTransitionReady:254 com.android.server.wm.Transition.onTransactionReady:2525 com.android.server.wm.BLASTSyncEngine$SyncGroup.finishNow:238 com.android.server.wm.BLASTSyncEngine.onSurfacePlacement:303 
+09-08 11:50:44.485   599   662 I SurfaceControlRegistry: show, t=FinishTransaction_SyncId<113> sc=Task=6761, caller=android.view.SurfaceControl$Transaction.show:3378 com.android.server.wm.SystemTransitions.dispatchReady:570 com.android.server.wm.TransitionController$SystemTransitionPlayer.onTransitionReady:254 com.android.server.wm.Transition.onTransactionReady:2525 com.android.server.wm.BLASTSyncEngine$SyncGroup.finishNow:238 com.android.server.wm.BLASTSyncEngine.onSurfacePlacement:303 
+09-08 11:50:44.487   599   662 V SystemTransitions: Playing animation for (#113) Token{eca6d04 TransitionRecord{4d7f03b id=113 type=OPEN flags=0x0 c=[
+09-08 11:50:44.487   599   662 V SystemTransitions:    ChangeInfo{4035570 container=WallpaperWindowToken{199320e showWhenLocked=true} flags=0x0}
+09-08 11:50:44.487   599   662 V SystemTransitions:    ChangeInfo{44b5517 container=ActivityRecord{63271768 u0 com.omnitrix.watchface/.PermissionRequestActivity t-1} flags=0x0}
+09-08 11:50:44.487   599   662 V SystemTransitions:    ChangeInfo{b7f816e container=ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761} flags=0x0}
+09-08 11:50:44.487   599   662 V SystemTransitions:    ChangeInfo{7cdd00f container=ActivityRecord{70273967 u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity t2} flags=0x0}
+09-08 11:50:44.487   599   662 V SystemTransitions:    ChangeInfo{f262bb3 container=Task{648ec88 #1 type=home} flags=0x10}
+09-08 11:50:44.487   599   662 V SystemTransitions:    ChangeInfo{2a0589c container=Task{6a5d02b #2 type=home A=10045:com.samsung.android.wearable.sysui nonResizable} flags=0x10}
+09-08 11:50:44.487   599   662 V SystemTransitions:    ChangeInfo{ded72a5 container=DefaultTaskDisplayArea_d0@155633296 flags=0x0}
+09-08 11:50:44.487   599   662 V SystemTransitions:    ChangeInfo{7a6467a container=Display{#0 state=DOZE_SUSPEND size=396x396 ROTATION_0} flags=0x0}
+09-08 11:50:44.487   599   662 V SystemTransitions:    ChangeInfo{eff3522 container=Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface} flags=0x30}
+09-08 11:50:44.487   599   662 V SystemTransitions: ]
+09-08 11:50:44.487   599   662 V SystemTransitions: }}@0
+09-08 11:50:44.488   599   662 I SurfaceControlRegistry: show, t=StartTransaction_SyncId<113> sc=Transition Root: Task=6761, caller=android.view.SurfaceControl$Transaction.show:3378 com.android.server.wm.SystemTransitions.processReadyQueue:235 com.android.server.wm.SystemTransitions.dispatchReady:588 com.android.server.wm.TransitionController$SystemTransitionPlayer.onTransitionReady:254 com.android.server.wm.Transition.onTransactionReady:2525 com.android.server.wm.BLASTSyncEngine$SyncGroup.finishNow:238 
+09-08 11:50:44.491   599   661 W ProcessStats: Tracking association SourceState{bcfbd94 com.google.android.apps.wearable.systemui/10018 BFgs #49542} whose proc state 4 is better than process ProcessState{c0d9307 com.samsung.android.batterysavingsettings/1000 pkg=com.samsung.android.batterysavingsettings} proc state 14 (0 skipped)
+09-08 11:50:44.497  1035  1035 I SecWatchFaceOverlayUi: [WatchFaceOverlayModule] onHomeActivityFocusChanged(50) > hasFocus : false isWearing : true
+09-08 11:50:44.497  1035  1035 I WFP2Module: [WatchFacePickerModule] onHomeActivityFocusEvent(11) > event.hasFocus() == false
+09-08 11:50:44.498  1035  1035 I SecWatchFacePickerController: [WatchFacePickerModule] onHomeActivityFocusEvent(24) > shouldHidePicker false
+09-08 11:50:44.500   599   662 I SurfaceControlRegistry: apply, t=StartTransaction_SyncId<113>, caller=android.view.SurfaceControl$Transaction.apply:3277 android.view.SurfaceControl$Transaction.apply:3265 android.view.SurfaceControl$Transaction.apply:3215 com.android.server.wm.SystemDefaultTransitionHandler.startAnimation:325 com.android.server.wm.SystemTransitions.processReadyQueue:534 com.android.server.wm.SystemTransitions.dispatchReady:588 
+09-08 11:50:44.502   599   662 V SystemTransitions: animated by com.android.server.wm.SystemDefaultTransitionHandler@72ce84e
+09-08 11:50:44.507  1106  1106 W SYSTEM_UI: QuickpanelInputMonitor.loadTouchAcceptRatio(135): TouchAcceptAreaRatio = 0.15
+09-08 11:50:44.507  1106  1106 D AmbientTaskStackManager: doInvalidateAutoResumeTaskLocked: query all tasks! candidateTask=null
+09-08 11:50:44.513  1106  1188 D TaskController: Only visibility has changed, task=[#6761|standard|vis|focused|top="com.omnitrix.watchface/.DebugPreviewActivity"|base="com.omnitrix.watchface/.PermissionRequestActivity"|vis only]
+09-08 11:50:44.515   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.516   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.518   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.522   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.522   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.523   517   517 D SurfaceFlinger: Display 4633128672291735937 HWC layers:
+09-08 11:50:44.523   517   517 D SurfaceFlinger:        DEVICE |          126220498894848 | 00000100 | RGBA_8888    |    0.0    0.0  396.0  396.0 |    0    0  396  396 | Wallpaper BBQ wrapper#529 (82)
+09-08 11:50:44.523   517   517 D SurfaceFlinger:        DEVICE |            4445291151578 | 00002100 | RGBA_8888    |    0.0    0.0  396.0  396.0 |    0    0  396  396 | com.samsung.android.wearable.sysui/c[...]ui.mainui.activity.SysUiActivity#626 (62)
+09-08 11:50:44.523   517   517 D SurfaceFlinger:        DEVICE |          126220498894866 | 00002102 | RGBA_8888    |    0.0    0.0   49.0  396.0 |  356   40  396  356 | com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity#634 (1)
+09-08 11:50:44.523   517   517 D SurfaceFlinger: 
+09-08 11:50:44.524   599  5567 D InputDispatcher: Focus entered window (0): 3718e81 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity
+09-08 11:50:44.526 29388 29388 I VRI[DebugPreviewActivity]@40fde36: MSG_WINDOW_FOCUS_CHANGED 1 0
+09-08 11:50:44.526 29388 29388 I InputMethodManager: startInputInner - mService.startInputOrWindowGainedFocus
+09-08 11:50:44.526 29388 29388 I InputMethodManager: startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+09-08 11:50:44.528   599   835 D InputMethodManagerService: hasRemoteInputState : false softInputMode : 288
+09-08 11:50:44.529   599   835 I ImeTracker: com.omnitrix.watchface:c64952fa: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+09-08 11:50:44.530   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.530   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.531   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.533   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.534   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.539 29388 29388 I InputMethodManager: handleMessage: setImeVisibility visible=false
+09-08 11:50:44.539 29388 29388 D InsetsController: hide(ime(), fromIme=false)
+09-08 11:50:44.539 29388 29388 I ImeTracker: com.omnitrix.watchface:c64952fa: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-08 11:50:44.540 21048 21048 I BATTERY_TILE_WatchDataLayerManager: onReceive(491): onReceive : update watch view 
+09-08 11:50:44.544 21048 21048 I BATTERY_TILE_WatchDataLayerManager: onReceive(532): Watch battery level : 36
+09-08 11:50:44.544 21048 21048 I BATTERY_TILE_WatchDataLayerManager: onReceive(549): Watch charging state : 0
+09-08 11:50:44.547   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.547   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.547  1106  1106 I AmbientTaskStackManager: Auto-resume task is [#6761|standard|invis|focused|top="com.omnitrix.watchface/.DebugPreviewActivity"|base="com.omnitrix.watchface/.PermissionRequestActivity"|no-ongoing]
+09-08 11:50:44.547  1106  1106 I AmbientTaskStackManager: updateTimer: skipped - waiting for grace period for recently changed task
+09-08 11:50:44.548   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.551   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.551   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.557   599   658 D [secipm]: mSecIpmManager report to nap
+09-08 11:50:44.557   599   658 I PkgPredictorService-SecIpmManagerServiceImpl: reportToNAP uid:10205 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity thisTime:111
+09-08 11:50:44.557  1035  1035 I SecWatchFacePickerView2: [WatchFacePickerModule] onTrimMemory(25) > trimMemory
+09-08 11:50:44.563   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.563   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.564   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.566   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.567   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.572  1106  1106 I AmbientTaskStackManager: setState: session state has changed from BEGUN to ENDING, reason="end() is called."
+09-08 11:50:44.573  1106  1106 I AmbientTaskStackManager: setState: session state has changed from ENDING to ENDED, reason="end() is called."
+09-08 11:50:44.576   599  3050 D DisplayControlLock: acquired: SystemUIRCDCLock android.os.BinderProxy@279245e
+09-08 11:50:44.576   599  3050 I DisplayControlLock: First acquired
+09-08 11:50:44.576   599  3050 I DisplayOffload: [DisplayOffloadService] $r8$lambda$6E-GPXhgmVif410Ru39HxYL-gfs(33) > Do not switching doze while display offloading. isDisplayOffloadControlling(): false, mIsBrightnessControlling: false
+09-08 11:50:44.578  1106  1106 D DisplayOffloadPolicy: handleBlockOffload isInAmbientLite=false, isGhostComponent=false, req=false, from=com.google.android.clockwork.systemui.ambient.DisplayOffloadPolicy.onExpectedTopTaskChanged:1 
+09-08 11:50:44.578  1106  1106 D DisplayOffloadPolicy: Offloading unBlocked.
+09-08 11:50:44.578  1106  1106 I DisplayOffloadManager: updateTopActivity: taskId = 6761; activityToFront=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:44.579  1106  1106 I AmbiactiveComponentManager: Ambient update disallowed, canceling alarm.
+09-08 11:50:44.580   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.580   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.580   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.581   599  3050 D DisplayOffload: updateTopTask: taskId=6761; activityToFront=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:44.582   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.583   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.587   599   599 I DOLayout: [OffloadLayoutManager] isTopActivityEquals(30) > Current: ComponentInfo{com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity}, ToFront:ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:44.587   599   599 I DisplayOffload: [DisplayOffloadService$$ExternalSyntheticLambda16] run(112) > isUpdatedTopTaskSysUi: false, isTopTaskChanged: true, isDisplayOffloadControlling: false, isInAmbient: true
+09-08 11:50:44.588   599   599 I DisplayOffload: [DisplayOffloadService$$ExternalSyntheticLambda16] run(259) > Case 4) AOD -> Offloading or AOD >>> No Actions
+09-08 11:50:44.588   599   599 I DOLayout: onTopTaskChanged: activityToFront=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:44.588   599   599 D DOLayout: setTargetUid: 10045 -> 10205
+09-08 11:50:44.590  1106  1106 I AmbientTaskStateMachine: State transition: TaskAmbiactive -> TaskAmbientLite. Reason: target task [#6761|standard|invis|focused|top="com.omnitrix.watchface/.DebugPreviewActivity"|base="com.omnitrix.watchface/.PermissionRequestActivity"|no-ongoing] is eligible for ambient lite
+09-08 11:50:44.590  1106  1106 I AmbientTaskStackManager: setState: session state has changed from INITIALIZED to BEGINNING, reason="begin() is called."
+09-08 11:50:44.591  1106  1106 D AmbientTaskStackManager: doInvalidateAutoResumeTaskLocked: query all tasks! candidateTask=null
+09-08 11:50:44.596   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.597   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.597   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.599   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.599   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.604  1106  1106 I AmbientTaskStackManager: Auto-resume task is [#6761|standard|vis|focused|top="com.omnitrix.watchface/.DebugPreviewActivity"|base="com.omnitrix.watchface/.PermissionRequestActivity"|vis only|no-ongoing]
+09-08 11:50:44.604  1106  1106 I AmbientTaskStackManager: updateTimer: skipped - waiting for grace period for recently changed task
+09-08 11:50:44.607  1106  1106 D DisplayOffloadPolicy: handleBlockOffload isInAmbientLite=true, isGhostComponent=false, req=false, from=com.google.android.clockwork.systemui.ambient.DisplayOffloadPolicy.onAmbientLiteEntered:1 
+09-08 11:50:44.607  1106  1106 D DisplayOffloadPolicy: Offloading blocked.
+09-08 11:50:44.610   599  3050 D DisplayControlLock: acquired: DisplayOffloadPolicy android.os.BinderProxy@de4ef09
+09-08 11:50:44.612  1035  1035 I SysUI   : [WatchFaceOverlayModule]isInAmbientLiteMode : true
+09-08 11:50:44.612  1035  1035 I SecWatchFaceOverlayUi: [SetViewToggleButtonReceiver$$ExternalSyntheticOutline0] m(13) > setVisible: false
+09-08 11:50:44.613   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.613   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.614   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.616   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.617   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.619  1106  1106 D DisplayOffloadPolicy: handleBlockOffload isInAmbientLite=true, isGhostComponent=false, req=false, from=com.google.android.clockwork.systemui.ambient.DisplayOffloadPolicy.onExpectedTopTaskChanged:1 
+09-08 11:50:44.619  1106  1106 D DisplayOffloadPolicy: Offloading blocked.
+09-08 11:50:44.619  1106  1106 I DisplayOffloadManager: updateTopActivity: taskId = 6761; activityToFront=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:44.620  1106  1106 D AmbiactiveComponentManager: maybeUpdateGhostComponent: creating ghost component for task [#6761|standard|vis|focused|top="com.omnitrix.watchface/.DebugPreviewActivity"|base="com.omnitrix.watchface/.PermissionRequestActivity"|vis only]
+09-08 11:50:44.622  1106  1106 I WakefulDisplayControlLock: acquire: acquired without timeout, using default, mTag=task-opening
+09-08 11:50:44.622   599  3782 D DisplayOffload: updateTopTask: taskId=6761; activityToFront=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:44.624   599   599 I DOLayout: [OffloadLayoutManager] isTopActivityEquals(30) > Current: ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}, ToFront:ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:44.624   599   599 I DisplayOffload: [DisplayOffloadService$$ExternalSyntheticLambda16] run(112) > isUpdatedTopTaskSysUi: false, isTopTaskChanged: false, isDisplayOffloadControlling: false, isInAmbient: true
+09-08 11:50:44.624  1106  1106 D DisplayOffloadPolicy: handleBlockOffload isInAmbientLite=true, isGhostComponent=true, req=false, from=com.google.android.clockwork.systemui.ambient.DisplayOffloadPolicy.onAmbientComponentConfigChanged:1 
+09-08 11:50:44.625  1106  1106 D DisplayOffloadPolicy: Offloading blocked.
+09-08 11:50:44.625   599   599 I DisplayOffload: [DisplayOffloadService$$ExternalSyntheticLambda16] run(259) > Case 4) AOD -> Offloading or AOD >>> No Actions
+09-08 11:50:44.625   599   599 I DOLayout: onTopTaskChanged: activityToFront=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:44.638  1035  1035 I VRI[]@5da2282: Relayout returned: old=(0,0,396,396) new=(0,0,396,396) req=(396,396)8 dur=1 res=0x0 s={false 0x0} ch=true seqId=0
+09-08 11:50:44.647   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.648   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.648   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.650   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.651   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.656   599  3782 D DisplayOffload: isSysUiUid: sysUi=10045 uid=10205
+09-08 11:50:44.656   599  3782 I DOCallback: callback no longer exists, id=10205
+09-08 11:50:44.656   599  3782 D DisplayOffload: [DisplayOffloadService] isAvailableWatchFaceOffloading(23) > isSysUIMainActivityOnTop: false
+09-08 11:50:44.656   599  3782 D DisplayOffload: isSysUiUid: sysUi=10045 uid=10205
+09-08 11:50:44.657  1106  1106 D AmbientDream: updateBrightnessControl false, type=0, wf=true, offload state=0, from=com.google.android.clockwork.systemui.ambient.AmbientDream.onExpectedTopTaskChanged:1 
+09-08 11:50:44.657  1106  1106 D SamsungDozeBrightnessLevels: Doze brightness: 21, settingLevel=47 isPlugged=false
+09-08 11:50:44.657  1106  1106 D WearableKeyguard: [KeyguardService] Blocking keyguard entry
+09-08 11:50:44.657  1106  1106 D WearableKeyguard: [KeyguardService] setNextLockState: Ignoring state change request because we're already in this state: STATE_UNLOCKED
+09-08 11:50:44.657   599  3782 D DisplayOffload: isSysUiUid: sysUi=10045 uid=10205
+09-08 11:50:44.657   599  3782 I DOCallback: callback no longer exists, id=10205
+09-08 11:50:44.658   599  3782 D DisplayOffload: [DisplayOffloadService] isAvailableWatchFaceOffloading(23) > isSysUIMainActivityOnTop: false
+09-08 11:50:44.658   599  3782 D DisplayOffload: isSysUiUid: sysUi=10045 uid=10205
+09-08 11:50:44.658  1106  1106 D AmbientDream: updateBrightnessControl false, type=0, wf=true, offload state=0, from=com.google.android.clockwork.systemui.ambient.AmbientDream.onExpectedTopTaskChanged:1 
+09-08 11:50:44.659  1106  1106 D SamsungDozeBrightnessLevels: Doze brightness: 21, settingLevel=47 isPlugged=false
+09-08 11:50:44.663   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.663   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.664   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.666   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.667   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.680   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.680   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.680   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.682   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.683   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.696   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.696   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.697   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.699   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.700   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.713   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.713   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.714   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.716   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.716   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.729   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.730   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.730   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.732   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.733   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.746   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.746   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.747   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.749   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.750   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.763   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.763   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.764   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.765   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.766   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.771   470 30254 I HYPER-HAL: [RequestManager.cpp]releaseLocked(): Released ID : 114005
+09-08 11:50:44.781   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.782   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.783   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.786   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.788   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.799   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.800   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.801   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.806   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.808   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.814   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.815   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.816   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.819   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.821   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.834   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.835   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.836   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.842   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.843   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.848   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.848   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.850   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.852   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.854   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.864   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.864   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.864   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.868   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.869   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.881   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.882   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.883   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.886   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.888   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.897   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.898   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.898   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.901   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.902   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.914   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.915   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.916   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.919   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.921   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.927   599   661 V SystemTransitions: Transition animation finished (aborted=false, notifying core (#113) Token{eca6d04 TransitionRecord{4d7f03b id=113 type=OPEN flags=0x0 c=[
+09-08 11:50:44.927   599   661 V SystemTransitions:    ChangeInfo{4035570 container=WallpaperWindowToken{199320e showWhenLocked=true} flags=0x0}
+09-08 11:50:44.927   599   661 V SystemTransitions:    ChangeInfo{44b5517 container=ActivityRecord{63271768 u0 com.omnitrix.watchface/.PermissionRequestActivity t-1} flags=0x0}
+09-08 11:50:44.927   599   661 V SystemTransitions:    ChangeInfo{b7f816e container=ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761} flags=0x0}
+09-08 11:50:44.927   599   661 V SystemTransitions:    ChangeInfo{7cdd00f container=ActivityRecord{70273967 u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity t2} flags=0x0}
+09-08 11:50:44.927   599   661 V SystemTransitions:    ChangeInfo{f262bb3 container=Task{648ec88 #1 type=home} flags=0x10}
+09-08 11:50:44.927   599   661 V SystemTransitions:    ChangeInfo{2a0589c container=Task{6a5d02b #2 type=home A=10045:com.samsung.android.wearable.sysui nonResizable} flags=0x10}
+09-08 11:50:44.927   599   661 V SystemTransitions:    ChangeInfo{ded72a5 container=DefaultTaskDisplayArea_d0@155633296 flags=0x0}
+09-08 11:50:44.927   599   661 V SystemTransitions:    ChangeInfo{7a6467a container=Display{#0 state=DOZE_SUSPEND size=396x396 ROTATION_0} flags=0x0}
+09-08 11:50:44.927   599   661 V SystemTransitions:    ChangeInfo{eff3522 container=Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface} flags=0x30}
+09-08 11:50:44.927   599   661 V SystemTransitions: ]
+09-08 11:50:44.927   599   661 V SystemTransitions: }}@0
+09-08 11:50:44.927   599   661 I SurfaceControlRegistry: apply, t=FinishTransaction_SyncId<113>, caller=android.view.SurfaceControl$Transaction.apply:3277 android.view.SurfaceControl$Transaction.apply:3265 android.view.SurfaceControl$Transaction.apply:3215 com.android.server.wm.SystemTransitions.onFinishInner:139 com.android.server.wm.SystemTransitions.onFinish:9 com.android.server.wm.SystemTransitions$$ExternalSyntheticLambda6.onTransitionFinished:10 
+09-08 11:50:44.930   599   661 V SystemTransitions: Track 0 became idle
+09-08 11:50:44.930   599   661 V SystemTransitions: All active transition animations finished
+09-08 11:50:44.930   517   517 E CompositionEngine: [com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626] Invalid device requested composition type change: Client (1) --> Device (2)
+09-08 11:50:44.931   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.931   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.934   460   484 E display : [PrimaryDisplay] 2 layer invalid compositionType, mSfCompositionType(1), mCompositionType(1), mExynosCompositionType(0), mValidateCompositionType(0)
+09-08 11:50:44.935   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.940  1106  1106 I AmbientTaskStackManager: updateTimer: skipped - waiting for grace period for recently changed task
+09-08 11:50:44.943   599   661 V WindowManager: Finish Transition: TransitionRecord{4d7f03b id=113 type=OPEN flags=0x0 c=[
+09-08 11:50:44.943   599   661 V WindowManager:    ChangeInfo{4035570 container=WallpaperWindowToken{199320e showWhenLocked=true} flags=0x0}
+09-08 11:50:44.943   599   661 V WindowManager:    ChangeInfo{44b5517 container=ActivityRecord{63271768 u0 com.omnitrix.watchface/.PermissionRequestActivity t-1} flags=0x0}
+09-08 11:50:44.943   599   661 V WindowManager:    ChangeInfo{b7f816e container=ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761} flags=0x0}
+09-08 11:50:44.943   599   661 V WindowManager:    ChangeInfo{7cdd00f container=ActivityRecord{70273967 u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity t2} flags=0x0}
+09-08 11:50:44.943   599   661 V WindowManager:    ChangeInfo{f262bb3 container=Task{648ec88 #1 type=home} flags=0x10}
+09-08 11:50:44.943   599   661 V WindowManager:    ChangeInfo{2a0589c container=Task{6a5d02b #2 type=home A=10045:com.samsung.android.wearable.sysui nonResizable} flags=0x10}
+09-08 11:50:44.943   599   661 V WindowManager:    ChangeInfo{ded72a5 container=DefaultTaskDisplayArea_d0@155633296 flags=0x0}
+09-08 11:50:44.943   599   661 V WindowManager:    ChangeInfo{7a6467a container=Display{#0 state=DOZE_SUSPEND size=396x396 ROTATION_0} flags=0x0}
+09-08 11:50:44.943   599   661 V WindowManager:    ChangeInfo{eff3522 container=Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface} flags=0x30}
+09-08 11:50:44.943   599   661 V WindowManager: ]
+09-08 11:50:44.943   599   661 V WindowManager: }, caller=com.android.server.wm.WindowOrganizerController.finishTransition:49 com.android.server.wm.SystemTransitions$$ExternalSyntheticLambda8.run:32 android.os.Handler.handleCallback:995 
+09-08 11:50:44.946   599   658 V WindowManager: Finish Transition (#113): created at 09-08 11:50:44.368 collect-started=1.279ms request-sent=12.576ms started=18.472ms ready=40.881ms sent=111.671ms commit=34.78ms finished=575.205ms
+09-08 11:50:44.952   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.953   517   517 D SurfaceFlinger: Display 4633128672291735937 HWC layers:
+09-08 11:50:44.953   517   517 D SurfaceFlinger:        DEVICE |          126220498894866 | 00002102 | RGBA_8888    |    0.0    0.0  396.0  396.0 |    0    0  396  396 | com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity#634 (1)
+09-08 11:50:44.953   517   517 D SurfaceFlinger: 
+09-08 11:50:44.955   517   712 I SurfaceFlinger: id=635 Removed Transition Root: Task=6761#635 (119)
+09-08 11:50:44.956   599   661 V WindowManager: Setting visibility of Window{85d27ce u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity}: false, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:19 com.android.server.wm.WindowToken.setClientVisible:48 com.android.server.wm.ActivityRecord.commitVisibility:186 com.android.server.wm.TransitionController.finishTransition:98 com.android.server.wm.WindowOrganizerController.finishTransition:49 
+09-08 11:50:44.957   599   661 V WindowManager: Setting visibility of Window{4569cce u0 com.omnitrix.watchface.OmnitrixWatchFaceService}: false, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:19 com.android.server.wm.WindowToken.setClientVisible:48 com.android.server.wm.WallpaperWindowToken.setVisible$1:3 com.android.server.wm.WallpaperWindowToken.commitVisibility:48 com.android.server.wm.TransitionController.finishTransition:132 
+09-08 11:50:44.958  1035  1035 I VRI[SysUiActivity]@bcb989c: handleAppVisibility mAppVisible = true visible = false
+09-08 11:50:44.963   517   517 I Layer   : id=635 Destroyed Transition Root: Task=6761#635
+09-08 11:50:44.964   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.972  1106  1188 D TaskController: Only visibility has changed, task=[#1|home|invis|top="com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity"|vis only]
+09-08 11:50:44.981   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:44.988   599  3786 V WindowManager: Relayout Window{85d27ce u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity}: viewVisibility=8 req=396x396 ty=1 d0
+09-08 11:50:44.994   599  3786 V WindowManager: Relayout hash=85d27ce, pid=1035, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=resize forwardNavigation} layoutInDisplayCutoutMode=always ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x1030302
+09-08 11:50:44.994   599  3786 V WindowManager:   fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SHOW_WALLPAPER SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+09-08 11:50:44.994   599  3786 V WindowManager:   pfl=NO_MOVE_ANIMATION EDGE_TO_EDGE_ENFORCED FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+09-08 11:50:44.994   599  3786 V WindowManager:   bhv=DEFAULT
+09-08 11:50:44.994   599  3786 V WindowManager:   fitSides=
+09-08 11:50:44.994   599  3786 V WindowManager:   frameRateBoostOnTouch=true
+09-08 11:50:44.994   599  3786 V WindowManager:   dvrrWindowFrameRateHint=true}
+09-08 11:50:44.999  1035  1035 I VRI[SysUiActivity]@bcb989c: Relayout returned: old=(0,0,396,396) new=(0,0,396,396) req=(396,396)8 dur=10 res=0x2 s={false 0x0} ch=true seqId=0
+09-08 11:50:45.000  1035  1035 I SecTiltDetectManagerModule: [SecTiltDetectManagerModule] onStateChanged(17) > onHomeActivityLifecycle ON_STOP
+09-08 11:50:45.000  1035  1035 I WNoti   : [NotificationHorizontalPageScroller] onStateChanged(47) > ON_STOP: UiMode: MODE_WATCH_FACE
+09-08 11:50:45.002  1035  1035 I WNoti   : [SetViewToggleButtonReceiver$$ExternalSyntheticOutline0] m(13) > isSysUiOnTop: false
+09-08 11:50:45.003  1035  1035 I WNoti   : [NotificationHorizontalPageScroller] onStateChanged(83) > sensor-disconnected: In MODE_WATCH_FACE, sysui-top?: false
+09-08 11:50:45.003  1035  1035 I VRI[SysUiActivity]@bcb989c: stopped(true) old = false
+09-08 11:50:45.004  1035  1035 W SysUI   : [SecSysUiBaseActivity] onStop(5) > [SysUiActivity] before onStop().
+09-08 11:50:45.005  1035  1035 W SysUI   : [SecSysUiBaseActivity] onStop(13) > [SysUiActivity] end onStop().
+09-08 11:50:45.019  1106  1106 D AmbientTaskStackManager: Timer com.omnitrix.watchface/.DebugPreviewActivity:6761 is created!
+09-08 11:50:45.024  1106  1106 D AmbientTaskStackManager: shouldExpireInNoTime isAmbientComponent=false, isForceExpireInNoTime=false, lastSleepReason=6, timeElapsed=433
+09-08 11:50:45.024   599  5567 V WindowManager: Relayout Window{85d27ce u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity}: viewVisibility=8 req=396x396 ty=1 d0
+09-08 11:50:45.024  1106  1106 D AmbientTaskStackManager: checkActiveLocked: timer is within timeout by 3600000ms
+09-08 11:50:45.026  1106  1106 D AmbientTaskStackManager: Timer com.omnitrix.watchface/.DebugPreviewActivity:6761 started!
+09-08 11:50:45.026  1106  1106 D AmbientTaskStackManager: checkActiveLocked: timer is within timeout by 3599998ms
+09-08 11:50:45.026  1106  1106 D AmbientTaskStackManager: Showing ambient lite overlay.
+09-08 11:50:45.031   599  5567 V WindowManager: Relayout hash=85d27ce, pid=1035, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan} layoutInDisplayCutoutMode=always ty=BASE_APPLICATION fmt=TRANSPARENT wanim=0x1030302
+09-08 11:50:45.031   599  5567 V WindowManager:   fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SHOW_WALLPAPER SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+09-08 11:50:45.031   599  5567 V WindowManager:   pfl=NO_MOVE_ANIMATION EDGE_TO_EDGE_ENFORCED FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+09-08 11:50:45.031   599  5567 V WindowManager:   bhv=DEFAULT
+09-08 11:50:45.031   599  5567 V WindowManager:   fitSides=
+09-08 11:50:45.031   599  5567 V WindowManager:   frameRateBoostOnTouch=true
+09-08 11:50:45.031   599  5567 V WindowManager:   dvrrWindowFrameRateHint=true}
+09-08 11:50:45.033  1035  1035 I VRI[SysUiActivity]@bcb989c: Relayout returned: old=(0,0,396,396) new=(0,0,396,396) req=(396,396)8 dur=10 res=0x2 s={false 0x0} ch=false seqId=0
+09-08 11:50:45.035   599  5567 E WindowManager: win=Window{85d27ce u0 com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:25 com.android.server.wm.ActivityRecord.activityStopped:171 com.android.server.wm.ActivityClientController.activityStopped:94 android.app.IActivityClientController$Stub.onTransact:710 com.android.server.wm.ActivityClientController.onTransact:1 android.os.Binder.execTransactInternal:1426 android.os.Binder.execTransact:1365 
+09-08 11:50:45.047   517   517 I SurfaceFlinger: id=626 Removed com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626 (118)
+09-08 11:50:45.048   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.063   517   517 I Layer   : id=626 Destroyed com.samsung.android.wearable.sysui/com.google.android.clockwork.sysui.mainui.activity.SysUiActivity#626
+09-08 11:50:45.066   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.082   337  9679 I android.system.suspend-service: !@SystemSuspend: wakeup_count-
+09-08 11:50:45.082   337  9679 I android.system.suspend-service: !@SystemSuspend: mSuspendCounter+
+09-08 11:50:45.127   599  3782 I SurfaceComposerClient: captureLayers:childrenOnly:1, sync:1
+09-08 11:50:45.128   517   823 D SurfaceFlinger: captureLayers sourceCrop: Rect(0, 0, 396, 396) frameScaleX: 0.500000 frameScaleY: 0.500000 captureSecureLayers: 0 allowProtected: 0 grayscale: 0
+09-08 11:50:45.135   517   823 D SurfaceFlinger: captureScreenCommon hasProtectedLayer: 0 allowProtected: 0 supportsProtected: 0
+09-08 11:50:45.143   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.147   517   823 D SurfaceFlinger: renderScreenImpl:layers for present - com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity#634
+09-08 11:50:45.158  1035  1035 I SecWatchFaceOverlayUi: [SecWatchFaceOverlayUi] sendOverlayViewToDisplayOffload(10) > sendOverlayView
+09-08 11:50:45.159  1035  1035 I SecWatchFaceOverlayUi: [SecWatchFaceOverlayUi] sendOverlayViewToDisplayOffload(51) > Sending local overlay view for offload
+09-08 11:50:45.159  1035  1035 I DisplayOffloadManager: sendStatusBar
+09-08 11:50:45.161   599  5567 D DisplayOffload: isSysUiUid: sysUi=10045 uid=10045
+09-08 11:50:45.165   599  5567 D DOLayout: updateStatusBar: received status bar = BitmapResource{id: 65537, icon: Icon(typ=BITMAP size=1x1), width: 1, height: 1, blendMode: 1, color: null, visibility: null}
+09-08 11:50:45.166   599  5567 I DOLayout: computeShaForBitmap: df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119
+09-08 11:50:45.166   599  5567 D DOLayout: updateStatusBar: identical status bar, skipped
+09-08 11:50:45.171   599  5567 D DisplayOffload: isSysUiUid: sysUi=10045 uid=10045
+09-08 11:50:45.177   493   493 I displayoffload@2.0-service: [DisplayOffload.cpp:2009] setBrightnessConfigurationFloat > setBrightnessConfigurationFloat: brightenOnTilt(0), wakeOnTilt(0), displayTimeoutMs(15350)
+09-08 11:50:45.178   599   709 E DOHalAdapter: setBrightnessConfiguration: failed, status=UNSUPPORTED_OPERATION
+09-08 11:50:45.178   599   709 I SecDOBrightness: [SecBrightnessOffloadController] loadBrightness(28) > only available while display on
+09-08 11:50:45.181   599  3782 V WindowManager: Relayout Window{2aedb9e u0 SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]}: viewVisibility=0 req=396x396 ty=2040 d0
+09-08 11:50:45.183   517   823 I SurfaceFlinger: id=636 createSurf flag=44004, SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]#636
+09-08 11:50:45.183   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.189   599  3782 V WindowManager: Changing focus from Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity} to Window{2aedb9e u0 SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]} displayId=0 Callers=com.android.server.wm.Session.relayout:1324 android.view.IWindowSession$Stub.onTransact:721 com.android.server.wm.Session.onTransact:1 android.os.Binder.execTransactInternal:1421 
+09-08 11:50:45.194   599  3782 V WindowManager: Relayout hash=2aedb9e, pid=1106, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=NOTIFICATION_SHADE fmt=TRANSPARENT
+09-08 11:50:45.194   599  3782 V WindowManager:   fl=LAYOUT_IN_SCREEN LAYOUT_NO_LIMITS ALT_FOCUSABLE_IM LOCAL_FOCUS_MODE
+09-08 11:50:45.194   599  3782 V WindowManager:   pfl=NO_MOVE_ANIMATION
+09-08 11:50:45.194   599  3782 V WindowManager:   bhv=DEFAULT
+09-08 11:50:45.194   599  3782 V WindowManager:   fitTypes=NAVIGATION_BARS CAPTION_BAR
+09-08 11:50:45.194   599  3782 V WindowManager:   frameRateBoostOnTouch=true
+09-08 11:50:45.194   599  3782 V WindowManager:   dvrrWindowFrameRateHint=true}
+09-08 11:50:45.198   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.202  1106  1106 I VRI[SystemUIOverlay[]]@33fc9da: Relayout returned: old=(0,0,396,396) new=(0,0,396,396) req=(396,396)0 dur=19 res=0x3 s={true 0xe46a0900} ch=true seqId=0
+09-08 11:50:45.204   517   823 I SurfaceFlinger: id=637 createSurf flag=84004, Bounds for - SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]#637
+09-08 11:50:45.205   517   823 I SurfaceFlinger: id=638 createSurf flag=84004, e99415c SurfaceView[SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]]#638
+09-08 11:50:45.206   517   823 I SurfaceFlinger: id=639 createSurf flag=44000, e99415c SurfaceView[SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]](BLAST)#639
+09-08 11:50:45.206   517   823 I SurfaceFlinger: id=640 createSurf flag=20404, Background for e99415c SurfaceView[SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]]#640
+09-08 11:50:45.208  1106  1106 D NotificationShadeWC: surface created!
+09-08 11:50:45.210  1106  1106 D NotificationShadeWC: surface changed
+09-08 11:50:45.215   517   517 D SurfaceFlinger: [input] inputWindowCommands.focusRequests size is 1
+09-08 11:50:45.218   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.220   517   570 D SurfaceFlinger: [input] setFocusedWindow: 2aedb9e SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]
+09-08 11:50:45.221   599  5567 D InputDispatcher: Once focus requested (0): 2aedb9e SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]
+09-08 11:50:45.221   599  5567 D InputDispatcher: Focus request (0): 2aedb9e SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer] but waiting because NO_WINDOW
+09-08 11:50:45.221   599  5567 D InputDispatcher: Focus left window (0): 3718e81 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity
+09-08 11:50:45.223 29388 29388 I VRI[DebugPreviewActivity]@40fde36: MSG_WINDOW_FOCUS_CHANGED 0 0
+09-08 11:50:45.232  1106  1264 D BLASTBufferQueue: [VRI[SystemUIOverlay[]]@33fc9da#52](f:0,a:0) onFrameAvailable the first frame is available
+09-08 11:50:45.237  1106  1106 I VRI[SystemUIOverlay[]]@33fc9da: reportDrawFinished seqId=0 fn=1
+09-08 11:50:45.239   599  3782 D WindowManager: finishDrawingWindow: Window{2aedb9e u0 SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]} mDrawState=DRAW_PENDING seqId=0
+09-08 11:50:45.240   599   662 V WindowManager: performShowLocked: mDrawState=HAS_DRAWN in Window{2aedb9e u0 SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]}
+09-08 11:50:45.251   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.270   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.271   517   517 D SurfaceFlinger: Display 4633128672291735937 HWC layers:
+09-08 11:50:45.271   517   517 D SurfaceFlinger:        DEVICE |          126220498894866 | 00002102 | RGBA_8888    |    0.0    0.0    0.0    0.0 |    0    0   -1   -1 | com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity#634 (1)
+09-08 11:50:45.271   517   517 D SurfaceFlinger:   SOLID_COLOR |                        0 | 00000000 | N/A          |    0.0    0.0    0.0    0.0 |    0    0   -1   -1 | AmbientLiteOverlay-BlackBackground#107 (0)
+09-08 11:50:45.271   517   517 D SurfaceFlinger:        DEVICE |            2220498092528 | 00000000 | RGB_565      |    0.0    0.0  198.0  198.0 |    0    0  396  396 | AmbientLiteOverlay-TaskSnapshotContainer#105 (102)
+09-08 11:50:45.271   517   517 D SurfaceFlinger:        DEVICE |            4750233829631 | 00002100 | RGBA_8888    |    0.0    0.0  396.0  396.0 |    0    0  396  396 | SystemUIOverlay[StatusSurfaceLayer,K[...]dLayer,AodLayer,AodSurfaceLayer]#636 (1)
+09-08 11:50:45.271   517   517 D SurfaceFlinger: 
+09-08 11:50:45.272   599  3782 D InputDispatcher: Focus entered window (0): 2aedb9e SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]
+09-08 11:50:45.274  1106  1106 I VRI[SystemUIOverlay[]]@33fc9da: MSG_WINDOW_FOCUS_CHANGED 1 0
+09-08 11:50:45.275  1106  1106 D WearableKeyguard: [KeyguardRootView] Window focus changed: true
+09-08 11:50:45.281   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.299   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.314   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.331   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.352   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.364   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.381   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.398   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.414   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.432   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.450   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.459   599  3782 V WindowManager: Relayout Window{2aedb9e u0 SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]}: viewVisibility=0 req=396x396 ty=2040 d0
+09-08 11:50:45.459  1106  1106 I VRI[SystemUIOverlay[]]@33fc9da: Relayout returned: old=(0,0,396,396) new=(0,0,396,396) req=(396,396)0 dur=0 res=0x0 s={true 0xe46a0900} ch=false seqId=0
+09-08 11:50:45.468   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.477   599  5567 V WindowManager: Transition is created, t=TransitionRecord{d5db701 id=-1 type=TO_FRONT flags=0x800}, caller=com.android.server.wm.TransitionController.createTransition:17 com.android.server.wm.TransitionController.requestTransitionIfNeeded:35 com.android.server.wm.ActivityTaskManagerService$$ExternalSyntheticLambda10.accept:187 com.android.server.wm.RootWindowContainer.forAllDisplays:19 com.android.server.wm.ActivityTaskManagerService.setLockScreenShownLocked:63 
+09-08 11:50:45.478   599  5567 D BLASTSyncEngine: SyncGroup is created, id=114, name=Transition-TO_FRONT, caller=com.android.server.wm.TransitionController.moveToCollecting:78 com.android.server.wm.TransitionController.createTransition:46 com.android.server.wm.TransitionController.requestTransitionIfNeeded:35 com.android.server.wm.ActivityTaskManagerService$$ExternalSyntheticLambda10.accept:187 com.android.server.wm.RootWindowContainer.forAllDisplays:19 com.android.server.wm.ActivityTaskManagerService.setLockScreenShownLocked:63 com.android.server.wm.ActivityTaskManagerService.setLockScreenShown:19 
+09-08 11:50:45.478   599  5567 W BLASTSyncEngine: setSyncMethod, id=114, method=0, caller=com.android.server.wm.TransitionController.moveToCollecting:90 com.android.server.wm.TransitionController.createTransition:46 com.android.server.wm.TransitionController.requestTransitionIfNeeded:35 
+09-08 11:50:45.478   599  5567 V WindowManager: Start collecting in Transition: TransitionRecord{d5db701 id=114 type=TO_FRONT flags=0x800}, caller=com.android.server.wm.TransitionController.createTransition:46 com.android.server.wm.TransitionController.requestTransitionIfNeeded:35 com.android.server.wm.ActivityTaskManagerService$$ExternalSyntheticLambda10.accept:187 com.android.server.wm.RootWindowContainer.forAllDisplays:19 com.android.server.wm.ActivityTaskManagerService.setLockScreenShownLocked:63 
+09-08 11:50:45.479   599  5567 V WindowManager: Requesting StartTransition: TransitionRecord{d5db701 id=114 type=TO_FRONT flags=0x800}, caller=com.android.server.wm.TransitionController.requestTransitionIfNeeded:43 com.android.server.wm.ActivityTaskManagerService$$ExternalSyntheticLambda10.accept:187 com.android.server.wm.RootWindowContainer.forAllDisplays:19 com.android.server.wm.ActivityTaskManagerService.setLockScreenShownLocked:63 com.android.server.wm.ActivityTaskManagerService.setLockScreenShown:19 
+09-08 11:50:45.479   599  5567 V SystemTransitions: Transition requested (#114): Token{a6f69a6 TransitionRecord{d5db701 id=114 type=TO_FRONT flags=0x800}}TransitionRequestInfo { type = TO_FRONT, triggerTask = null, pipChange = null, remoteTransition = null, displayChange = null, flags = 2048, debugId = 114 }
+09-08 11:50:45.480   599  5567 D WindowManager: Create SleepToken: tag=keyguard, displayId=0
+09-08 11:50:45.481   599  5567 D ActivityTaskManager: Top Process State changed to PROCESS_STATE_TOP_SLEEPING
+09-08 11:50:45.482   599  3782 V WindowManager: Relayout hash=2aedb9e, pid=0, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan} ty=NOTIFICATION_SHADE fmt=TRANSPARENT
+09-08 11:50:45.482   599  3782 V WindowManager:   fl=LAYOUT_IN_SCREEN LAYOUT_NO_LIMITS ALT_FOCUSABLE_IM LOCAL_FOCUS_MODE
+09-08 11:50:45.482   599  3782 V WindowManager:   pfl=NO_MOVE_ANIMATION
+09-08 11:50:45.482   599  3782 V WindowManager:   bhv=DEFAULT
+09-08 11:50:45.482   599  3782 V WindowManager:   fitTypes=NAVIGATION_BARS CAPTION_BAR
+09-08 11:50:45.482   599  3782 V WindowManager:   frameRateBoostOnTouch=true
+09-08 11:50:45.482   599  3782 V WindowManager:   dvrrWindowFrameRateHint=true}
+09-08 11:50:45.487   599  5567 V WindowManager: Collecting in transition 114: ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761}, caller=com.android.server.wm.TransitionController.collect:6 com.android.server.wm.ActivityRecord.setVisibility:131 com.android.server.wm.ActivityRecord.makeInvisible:31 com.android.server.wm.EnsureActivitiesVisibleHelper.process:472 com.android.server.wm.TaskFragment.updateActivityVisibilities:8 
+09-08 11:50:45.487   599  5567 D WindowManager: prepareSync <SYNC_STATE_WAITING_FOR_DRAW>, prepareSyncSeqId=0, w=Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:45.502  1106  1106 I AmbientTaskStackManager: setState: session state has changed from BEGINNING to BEGUN, reason="Ambient lite overlay is shown!"
+09-08 11:50:45.503   599   661 V WindowManager: Starting Transition 114, caller=com.android.server.wm.WindowOrganizerController.startTransition:45 com.android.server.wm.SystemTransitions$$ExternalSyntheticLambda0.run:21 android.os.Handler.handleCallback:995 
+09-08 11:50:45.509   599  3782 D DisplayControlLock: released: SystemUIRCDCLock android.os.BinderProxy@279245e
+09-08 11:50:45.510   599   662 V WindowManager: SyncGroup 114: Finished!
+09-08 11:50:45.510   599   662 V WindowManager:   Final targets: [ChangeInfo{4bfe7 container=Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface} flags=0x10}, ChangeInfo{8284794 container=DefaultTaskDisplayArea_d0@155633296 flags=0x10}]
+09-08 11:50:45.511   517   539 I SurfaceFlinger: id=641 createSurf flag=84004, Transition Root: DefaultTaskDisplayArea_d0#641
+09-08 11:50:45.514   517   517 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+09-08 11:50:45.515   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.523  1106  1106 D WearableKeyguard: [KeyguardService] Unblocked keyguard entry
+09-08 11:50:45.523  1106  1106 D WearableKeyguard: [KeyguardService] setNextLockState: Ignoring state change request because we're already in this state: STATE_UNLOCKED
+09-08 11:50:45.523  1106  1106 D AmbientDream: onGhostAmbiactiveStateChanged: true
+09-08 11:50:45.523   599  3782 D DisplayOffload: setGhostAmbiactiveState true
+09-08 11:50:45.526   493   493 I displayoffload@2.0-service: [DisplayOffload.cpp:2009] setBrightnessConfigurationFloat > setBrightnessConfigurationFloat: brightenOnTilt(0), wakeOnTilt(0), displayTimeoutMs(15350)
+09-08 11:50:45.527   599   709 E DOHalAdapter: setBrightnessConfiguration: failed, status=UNSUPPORTED_OPERATION
+09-08 11:50:45.528   599   709 D SecDOBrightness: [SecBrightnessOffloadController] loadBrightness(229) > no changes, skip to send to hal
+09-08 11:50:45.530   599   662 V SystemTransitions: onTransitionReady (#114Token{a6f69a6 TransitionRecord{d5db701 id=114 type=TO_FRONT flags=0x840 c=[
+09-08 11:50:45.530   599   662 V SystemTransitions:    ChangeInfo{3537383 container=ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761} flags=0x0}
+09-08 11:50:45.530   599   662 V SystemTransitions:    ChangeInfo{8284794 container=DefaultTaskDisplayArea_d0@155633296 flags=0x10}
+09-08 11:50:45.530   599   662 V SystemTransitions:    ChangeInfo{20c4900 container=Display{#0 state=DOZE_SUSPEND size=396x396 ROTATION_0} flags=0x0}
+09-08 11:50:45.530   599   662 V SystemTransitions:    ChangeInfo{4bfe7 container=Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface} flags=0x10}
+09-08 11:50:45.530   599   662 V SystemTransitions: ]
+09-08 11:50:45.530   599   662 V SystemTransitions: }}: {id=114 t=TO_FRONT f=0x840 trk=0 r=[0@Point(0, 0)] c=[
+09-08 11:50:45.530   599   662 V SystemTransitions:         {WCT{RemoteToken{7a9a99a Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface}}} m=TO_BACK f=NONE p=WCT{RemoteToken{3678a12 DefaultTaskDisplayArea_d0@155633296}} leash=Surface(name=Task=6761)/@0x3794539 sb=Rect(0, 0 - 396, 396) eb=Rect(0, 0 - 396, 396) epz=Point(396, 396) d=0 taskParent=-1},
+09-08 11:50:45.530   599   662 V SystemTransitions:         {WCT{RemoteToken{3678a12 DefaultTaskDisplayArea_d0@155633296}} m=TO_BACK f=FLAG_IS_TASK_DISPLAY_AREA leash=Surface(name=DefaultTaskDisplayArea_d0)/@0xd0077e sb=Rect(0, 0 - 396, 396) eb=Rect(0, 0 - 396, 396) epz=Point(396, 396) d=0}
+09-08 11:50:45.530   599   662 V SystemTransitions:     ]}
+09-08 11:50:45.531   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.532   599   662 I SurfaceControlRegistry: hide, t=FinishTransaction_SyncId<114> sc=DefaultTaskDisplayArea_d0, caller=android.view.SurfaceControl$Transaction.hide:3404 com.android.server.wm.SystemTransitions.dispatchReady:538 com.android.server.wm.TransitionController$SystemTransitionPlayer.onTransitionReady:254 com.android.server.wm.Transition.onTransactionReady:2525 com.android.server.wm.BLASTSyncEngine$SyncGroup.finishNow:238 com.android.server.wm.BLASTSyncEngine.onSurfacePlacement:303 
+09-08 11:50:45.533   599   662 V SystemTransitions: Playing animation for (#114) Token{a6f69a6 TransitionRecord{d5db701 id=114 type=TO_FRONT flags=0x840 c=[
+09-08 11:50:45.533   599   662 V SystemTransitions:    ChangeInfo{3537383 container=ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761} flags=0x0}
+09-08 11:50:45.533   599   662 V SystemTransitions:    ChangeInfo{8284794 container=DefaultTaskDisplayArea_d0@155633296 flags=0x10}
+09-08 11:50:45.533   599   662 V SystemTransitions:    ChangeInfo{20c4900 container=Display{#0 state=DOZE_SUSPEND size=396x396 ROTATION_0} flags=0x0}
+09-08 11:50:45.533   599   662 V SystemTransitions:    ChangeInfo{4bfe7 container=Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface} flags=0x10}
+09-08 11:50:45.533   599   662 V SystemTransitions: ]
+09-08 11:50:45.533   599   662 V SystemTransitions: }}@0
+09-08 11:50:45.534   599   662 I SurfaceControlRegistry: show, t=StartTransaction_SyncId<114> sc=Transition Root: DefaultTaskDisplayArea_d0, caller=android.view.SurfaceControl$Transaction.show:3378 com.android.server.wm.SystemTransitions.processReadyQueue:235 com.android.server.wm.SystemTransitions.dispatchReady:588 com.android.server.wm.TransitionController$SystemTransitionPlayer.onTransitionReady:254 com.android.server.wm.Transition.onTransactionReady:2525 com.android.server.wm.BLASTSyncEngine$SyncGroup.finishNow:238 
+09-08 11:50:45.534   599   662 V SystemKeyguardTransitionHandler: start keyguard appearing transition, info={id=114 t=TO_FRONT f=0x840 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{7a9a99a Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface}}} m=TO_BACK f=NONE p=WCT{RemoteToken{3678a12 DefaultTaskDisplayArea_d0@155633296}} leash=Surface(name=Task=6761)/@0x3794539 sb=Rect(0, 0 - 396, 396) eb=Rect(0, 0 - 396, 396) epz=Point(396, 396) d=0 taskParent=-1},{WCT{RemoteToken{3678a12 DefaultTaskDisplayArea_d0@155633296}} m=TO_BACK f=FLAG_IS_TASK_DISPLAY_AREA leash=Surface(name=DefaultTaskDisplayArea_d0)/@0xd0077e sb=Rect(0, 0 - 396, 396) eb=Rect(0, 0 - 396, 396) epz=Point(396, 396) d=0}]}
+09-08 11:50:45.537   517   712 I SurfaceFlinger: id=642 createSurf flag=84000, Surface(name=Task=6761)/@0xfb5b51a_transition-leash#642
+09-08 11:50:45.538  1106  1320 I SurfaceControlRegistry: show, t=StartTransaction_SyncId<114> sc=Task=6761, caller=android.view.SurfaceControl$Transaction.show:3378 com.android.wm.shell.shared.TransitionUtil.newTarget:46 com.google.android.clockwork.systemui.transition.common.WearRemoteTransitionUtils.wrap:52 com.google.android.clockwork.systemui.transition.mixed.KeyguardTransitionHandlerProxy.startAnimation:7 android.window.IRemoteTransition$Stub.onTransact:162 android.os.Binder.execTransactInternal:1426 
+09-08 11:50:45.538  1106  1320 D WearTransitions: startAnimation [keyguard] for: android.os.BinderProxy@ea08e6 info: {id=114 t=TO_FRONT f=0x840 trk=0 r=[0@Point(0, 0)] c=[{m=TO_BACK f=NONE p=WCT{android.window.IWindowContainerToken$Stub$Proxy@a400e27} leash=Surface(name=Task=6761)/@0xfb5b51a sb=Rect(0, 0 - 396, 396) eb=Rect(0, 0 - 396, 396) epz=Point(396, 396) d=0 taskParent=-1},{m=TO_BACK f=FLAG_IS_TASK_DISPLAY_AREA leash=Surface(name=DefaultTaskDisplayArea_d0)/@0x9a8384b sb=Rect(0, 0 - 396, 396) eb=Rect(0, 0 - 396, 396) epz=Point(396, 396) d=0}]}type: TRANSIT_KEYGUARD_APPEARING
+09-08 11:50:45.538  1106  1320 I SurfaceControlRegistry: apply, t=StartTransaction_SyncId<114>, caller=android.view.SurfaceControl$Transaction.apply:3277 android.view.SurfaceControl$Transaction.apply:3265 android.view.SurfaceControl$Transaction.apply:3215 com.google.android.clockwork.systemui.transition.mixed.KeyguardTransitionHandlerProxy.startAnimation:64 android.window.IRemoteTransition$Stub.onTransact:162 android.os.Binder.execTransactInternal:1426 
+09-08 11:50:45.540   599   662 V SystemTransitions: animated by com.android.server.wm.SystemKeyguardTransitionHandler@367fe99
+09-08 11:50:45.540   599   662 I SurfaceComposerClient: captureLayers:childrenOnly:1, sync:1
+09-08 11:50:45.540   517   712 D SurfaceFlinger: captureLayers sourceCrop: Rect(0, 0, 396, 396) frameScaleX: 0.500000 frameScaleY: 0.500000 captureSecureLayers: 0 allowProtected: 0 grayscale: 0
+09-08 11:50:45.543   517   712 D SurfaceFlinger: captureScreenCommon hasProtectedLayer: 0 allowProtected: 0 supportsProtected: 0
+09-08 11:50:45.543  1106  1188 D WearTransitions: onTransitionFinished is called for keyguard transition=TRANSIT_KEYGUARD_APPEARING
+09-08 11:50:45.545   517   712 D SurfaceFlinger: renderScreenImpl:layers for present - com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity#634
+09-08 11:50:45.549   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.558   599   661 V UsbDeviceManager: onKeyguardStateChanged: isShowing:true secure:true user:0
+09-08 11:50:45.559   599   660 D UsbDeviceManager: handleMessage -> MSG_UPDATE_SCREEN_LOCK: mScreenLocked=true
+09-08 11:50:45.560   599   661 V SystemTransitions: Transition animation finished (aborted=false, notifying core (#114) Token{a6f69a6 TransitionRecord{d5db701 id=114 type=TO_FRONT flags=0x840 c=[
+09-08 11:50:45.560   599   661 V SystemTransitions:    ChangeInfo{3537383 container=ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761} flags=0x0}
+09-08 11:50:45.560   599   661 V SystemTransitions:    ChangeInfo{8284794 container=DefaultTaskDisplayArea_d0@155633296 flags=0x10}
+09-08 11:50:45.560   599   661 V SystemTransitions:    ChangeInfo{20c4900 container=Display{#0 state=DOZE_SUSPEND size=396x396 ROTATION_0} flags=0x0}
+09-08 11:50:45.560   599   661 V SystemTransitions:    ChangeInfo{4bfe7 container=Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface} flags=0x10}
+09-08 11:50:45.560   599   661 V SystemTransitions: ]
+09-08 11:50:45.560   599   661 V SystemTransitions: }}@0
+09-08 11:50:45.560   599   660 D UsbDeviceManager: getPersistProp: return=persist.sys.usb.config
+09-08 11:50:45.560   599   661 I SurfaceControlRegistry: apply, t=FinishTransaction_SyncId<114>, caller=android.view.SurfaceControl$Transaction.apply:3277 android.view.SurfaceControl$Transaction.apply:3265 android.view.SurfaceControl$Transaction.apply:3215 com.android.server.wm.SystemTransitions.onFinishInner:139 com.android.server.wm.SystemTransitions.onFinish:9 com.android.server.wm.SystemTransitions$$ExternalSyntheticLambda6.onTransitionFinished:10 
+09-08 11:50:45.561   599   660 D UsbDeviceManager: setEnabledFunctions functions=5 ,forceRestart=false ,usbDataUnlocked=true ,operationId=24
+09-08 11:50:45.561   599   660 D UsbDeviceManager: trySetEnabledFunctions: usbFunctions=mtp,adb forceRestart=false
+09-08 11:50:45.564   599   660 D UsbDeviceManager: Update mCurrentFunctions=mtp mSecCurrentFunctions=mtp,adb
+09-08 11:50:45.565   599   661 V SystemTransitions: Track 0 became idle
+09-08 11:50:45.565   599   661 V SystemTransitions: All active transition animations finished
+09-08 11:50:45.565   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.568  1106  1106 D RECENT  : RecentManager.java: lambda$onTaskSnapshotChanged$0(64) > Update snapshot :6761
+09-08 11:50:45.572   599   661 V WindowManager: Finish Transition: TransitionRecord{d5db701 id=114 type=TO_FRONT flags=0x840 c=[
+09-08 11:50:45.572   599   661 V WindowManager:    ChangeInfo{3537383 container=ActivityRecord{65386614 u0 com.omnitrix.watchface/.DebugPreviewActivity t6761} flags=0x0}
+09-08 11:50:45.572   599   661 V WindowManager:    ChangeInfo{8284794 container=DefaultTaskDisplayArea_d0@155633296 flags=0x10}
+09-08 11:50:45.572   599   661 V WindowManager:    ChangeInfo{20c4900 container=Display{#0 state=DOZE_SUSPEND size=396x396 ROTATION_0} flags=0x0}
+09-08 11:50:45.572   599   661 V WindowManager:    ChangeInfo{4bfe7 container=Task{e121378 #6761 type=standard A=10205:com.omnitrix.watchface} flags=0x10}
+09-08 11:50:45.572   599   661 V WindowManager: ]
+09-08 11:50:45.572   599   661 V WindowManager: }, caller=com.android.server.wm.WindowOrganizerController.finishTransition:49 com.android.server.wm.SystemTransitions$$ExternalSyntheticLambda8.run:32 android.os.Handler.handleCallback:995 
+09-08 11:50:45.572   599   658 V WindowManager: Finish Transition (#114): created at 09-08 11:50:45.476 collect-started=1.84ms request-sent=2.827ms started=26.596ms ready=26.552ms sent=52.295ms commit=20.204ms finished=95.483ms
+09-08 11:50:45.573   599   661 V WindowManager: Setting visibility of Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}: false, caller=com.android.server.wm.WindowContainer.sendAppVisibilityToClients:19 com.android.server.wm.WindowToken.setClientVisible:48 com.android.server.wm.ActivityRecord.commitVisibility:186 com.android.server.wm.TransitionController.finishTransition:98 com.android.server.wm.WindowOrganizerController.finishTransition:49 
+09-08 11:50:45.574   599   661 D WindowManager: transition/occluded commit occluded=false changed=false
+09-08 11:50:45.574   599   661 D WindowManager: setKeyguardOccluded occluded=false
+09-08 11:50:45.574  1106  1320 D WearableKeyguard: [KeyguardService] setOccluded:false
+09-08 11:50:45.575  1106  1106 D WearableKeyguard: [KeyguardService] handle SET_OCCLUDED = false
+09-08 11:50:45.575  1106  1106 D WearableKeyguard: [KeyguardService] updateKeyguardWindow: WINDOW_UNLOCKED
+09-08 11:50:45.575  1106  1106 D WearableKeyguard: [KeyguardWindowManager] updateWindow : WINDOW_UNLOCKED nextOccludedState: false
+09-08 11:50:45.575  1106  1106 D WearableKeyguard: [KeyguardWindowManager] shouldKeyguardLayerBeVisible isLockedNotOccluded : false isRequestingDismiss : false
+09-08 11:50:45.575  1106  1106 D KeyguardWindowManager: updateLayerVisibility: visible=false, visibilityStateChanged=false, windowState=WINDOW_UNLOCKED, nextWindowState=WINDOW_UNLOCKED
+09-08 11:50:45.575  1106  1106 D KeyguardWindowManager: layoutKeyguard() windowState:WINDOW_UNLOCKED, bouncerShowing:false, occluded:false, keyguardVisible:false
+09-08 11:50:45.575  1106  1106 D KeyguardWindowManager: setFocusState :false
+09-08 11:50:45.576 29388 29388 I VRI[DebugPreviewActivity]@40fde36: handleAppVisibility mAppVisible = true visible = false
+09-08 11:50:45.576 29388 29388 D VRI[DebugPreviewActivity]@40fde36: visibilityChanged oldVisibility=true newVisibility=false
+09-08 11:50:45.580   517   517 I SurfaceFlinger: id=641 Removed Transition Root: DefaultTaskDisplayArea_d0#641 (124)
+09-08 11:50:45.582   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.584  1106  1188 D TaskController: Only visibility has changed, task=[#6761|standard|invis|focused|top="com.omnitrix.watchface/.DebugPreviewActivity"|base="com.omnitrix.watchface/.PermissionRequestActivity"|vis only]
+09-08 11:50:45.590  1106  1106 D DisplayOffloadPolicy: handleBlockOffload isInAmbientLite=true, isGhostComponent=false, req=false, from=com.google.android.clockwork.systemui.ambient.DisplayOffloadPolicy.onAmbientComponentConfigChanged:1 
+09-08 11:50:45.590  1106  1106 D DisplayOffloadPolicy: Offloading blocked.
+09-08 11:50:45.597   517   517 I Layer   : id=641 Destroyed Transition Root: DefaultTaskDisplayArea_d0#641
+09-08 11:50:45.598   599  3050 V WindowManager: Relayout Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}: viewVisibility=8 req=396x396 ty=1 d0
+09-08 11:50:45.599   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.604   599  3050 V WindowManager: Relayout hash=3718e81, pid=29388, syncId=-1: mAttrs={(0,0)(fillxfill) sim={adjust=pan forwardNavigation} ty=BASE_APPLICATION wanim=0x1030302
+09-08 11:50:45.604   599  3050 V WindowManager:   fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+09-08 11:50:45.604   599  3050 V WindowManager:   pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+09-08 11:50:45.604   599  3050 V WindowManager:   bhv=DEFAULT
+09-08 11:50:45.604   599  3050 V WindowManager:   fitSides=
+09-08 11:50:45.604   599  3050 V WindowManager:   frameRateBoostOnTouch=true
+09-08 11:50:45.604   599  3050 V WindowManager:   dvrrWindowFrameRateHint=true}
+09-08 11:50:45.607  1106  1106 I AmbientTaskStackManager: Auto-resume task is [#6761|standard|invis|focused|top="com.omnitrix.watchface/.DebugPreviewActivity"|base="com.omnitrix.watchface/.PermissionRequestActivity"|vis only|no-ongoing]
+09-08 11:50:45.607  1106  1106 I AmbientTaskStackManager: updateTimer: skipped - waiting for grace period for recently changed task
+09-08 11:50:45.608 29388 29388 I VRI[DebugPreviewActivity]@40fde36: Relayout returned: old=(0,0,396,396) new=(0,0,396,396) req=(396,396)8 dur=10 res=0x2 s={false 0x0} ch=true seqId=0
+09-08 11:50:45.609 29388 29388 I VRI[DebugPreviewActivity]@40fde36: stopped(true) old = false
+09-08 11:50:45.626  1106  1106 D DisplayOffloadPolicy: handleBlockOffload isInAmbientLite=true, isGhostComponent=false, req=false, from=com.google.android.clockwork.systemui.ambient.DisplayOffloadPolicy.onExpectedTopTaskChanged:1 
+09-08 11:50:45.626  1106  1106 D DisplayOffloadPolicy: Offloading blocked.
+09-08 11:50:45.626  1106  1106 I DisplayOffloadManager: updateTopActivity: taskId = 6761; activityToFront=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:45.627   599  5567 D DisplayOffload: isSysUiUid: sysUi=10045 uid=10205
+09-08 11:50:45.627   599  5567 I DOCallback: callback no longer exists, id=10205
+09-08 11:50:45.627   599  5567 D DisplayOffload: [DisplayOffloadService] isAvailableWatchFaceOffloading(23) > isSysUIMainActivityOnTop: false
+09-08 11:50:45.627   599  3050 D DisplayOffload: updateTopTask: taskId=6761; activityToFront=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:45.627   599  5567 D DisplayOffload: isSysUiUid: sysUi=10045 uid=10205
+09-08 11:50:45.628  1106  1106 D AmbientDream: updateBrightnessControl false, type=0, wf=true, offload state=0, from=com.google.android.clockwork.systemui.ambient.AmbientDream.onExpectedTopTaskChanged:1 
+09-08 11:50:45.629  1106  1106 D SamsungDozeBrightnessLevels: Doze brightness: 21, settingLevel=47 isPlugged=false
+09-08 11:50:45.630   599   599 I DOLayout: [OffloadLayoutManager] isTopActivityEquals(30) > Current: ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}, ToFront:ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:45.631   599   599 I DisplayOffload: [DisplayOffloadService$$ExternalSyntheticLambda16] run(112) > isUpdatedTopTaskSysUi: false, isTopTaskChanged: false, isDisplayOffloadControlling: false, isInAmbient: true
+09-08 11:50:45.631   599   599 I DisplayOffload: [DisplayOffloadService$$ExternalSyntheticLambda16] run(259) > Case 4) AOD -> Offloading or AOD >>> No Actions
+09-08 11:50:45.631   599   599 I DOLayout: onTopTaskChanged: activityToFront=ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:45.644   599  3050 E WindowManager: win=Window{3718e81 u0 com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity} destroySurfaces: appStopped=true cleanupOnResume=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.ActivityRecord.destroySurfaces:25 com.android.server.wm.ActivityRecord.activityStopped:171 com.android.server.wm.ActivityClientController.activityStopped:94 android.app.IActivityClientController$Stub.onTransact:710 com.android.server.wm.ActivityClientController.onTransact:1 android.os.Binder.execTransactInternal:1426 android.os.Binder.execTransact:1365 
+09-08 11:50:45.647   517   517 I SurfaceFlinger: id=634 Removed com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity#634 (123)
+09-08 11:50:45.648   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.664   517   517 I Layer   : id=634 Destroyed com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity#634
+09-08 11:50:45.666   517   517 E Scheduler: trackPendingFrame: Invalid present fence
+09-08 11:50:45.725   325   325 D io_stats: !@ 179,0 r 2242600 41267124 w 318461 2970344 d 23895 1703564 f 25671 37439 iot 2471616 0 th 0 0 0 pt 0 inp 0 0 20155.939
+09-08 11:50:45.726   325   325 D io_stats: !@ Read_top(KB): system_server(599) 124 surfaceflinger(517) 12 composer@2.4-se(460) 12
+09-08 11:50:45.726   325   325 D io_stats: !@ Write_top(KB): kworker/u4:1(28729) 52 vendor.samsung.(497) 40 system_server(599) 8
+09-08 11:50:45.776  1106  1106 I DisplayOffloadManager: sendEmptySystemUILayout
+09-08 11:50:45.779   599  5567 D DOLayout: refreshTopActivity: topActivityChanged=false; New top activity is ComponentInfo{com.omnitrix.watchface/com.omnitrix.watchface.DebugPreviewActivity}
+09-08 11:50:45.782   599  5567 I DisplayOffload: [BrightnessOffload] Enabled, layout uid=10018
+09-08 11:50:45.783   599  5567 I DisplayOffload: update state to LAYOUT_NEEDS_UPDATE(18)
+09-08 11:50:45.783   599  5567 I DOLayout: canShowWatchFaceLayout: false
+09-08 11:50:45.783   599  5567 I DOLayout: computeNextLayout: next=SYSTEMUI canShowWatchFace=false canShowActivity=false
+09-08 11:50:45.783   599  5567 I DisplayOffload: markHalResourcesDirty: uid=10018
+09-08 11:50:45.783   599  5567 D DisplayOffload: clearCurrentLayoutLocked: clearing current layout from MCU.
+09-08 11:50:45.785   599  5567 I DisplayControlManager: [DisplayControlManager] updateOffloadStateLocked(152) > srcState: DISPLAY_READY, nextState: DISPLAY_READY, reseon : LAYOUT_TO_UNREADY
+09-08 11:50:45.785   599  5567 W DisplayControlManager: updateOffloadStateLocked: remains in: DISPLAY_READY
+09-08 11:50:45.786   599  5567 D DisplayControlLock: acquired: DisplayOffload:sendLayout java.lang.Object@ffd3e2
+09-08 11:50:45.786   599  5567 I DisplayOffload: suspending all app pipes
+09-08 11:50:45.786   599  5567 I DisplayOffload: [BrightnessOffload] Creating empty layout.
+09-08 11:50:45.787   493   493 I displayoffload@2.0-service: [DisplayOffload.cpp:2009] setBrightnessConfigurationFloat > setBrightnessConfigurationFloat: brightenOnTilt(0), wakeOnTilt(0), displayTimeoutMs(15350)
+09-08 11:50:45.790   599   709 E DOHalAdapter: setBrightnessConfiguration: failed, status=UNSUPPORTED_OPERATION
+09-08 11:50:45.791   493   493 I displayoffload@2.0-service: [DisplayOffload.cpp:1892] reset > reset: mDisplayOffloadControlling(0)
+09-08 11:50:45.792   599   709 I SecDOBrightness: [SecBrightnessOffloadController] loadBrightness(28) > only available while display on
+09-08 11:50:45.792   493   493 I displayoffload@2.0-service: [DisplayOffload.cpp:2117] addPrimitive > addPrimitive: id(1)
+09-08 11:50:45.793   493   493 I displayoffload@2.0-service: [DisplayOffload.cpp:2117] addPrimitive > addPrimitive: id(0)
+09-08 11:50:45.795   493   493 I displayoffload@2.0-service: [DisplayOffload.cpp:2069] addTranslationGroup > addTranslationGroup: id(65539), it empty layout
+09-08 11:50:45.795   493   493 I displayoffload@2.0-service: [DisplayOffload.cpp:1919] setRootResourceId > setRootResourceId: 65539
+09-08 11:50:45.797   493   493 I displayoffload@2.0-service: [DisplayOffload.cpp:2009] setBrightnessConfigurationFloat > setBrightnessConfigurationFloat: brightenOnTilt(0), wakeOnTilt(0), displayTimeoutMs(15350)
+09-08 11:50:45.799   599   709 E DOHalAdapter: setBrightnessConfiguration: failed, status=UNSUPPORTED_OPERATION
+09-08 11:50:45.799   599  5567 D DOCallback: invoking callback on [10018, mCallbacks=com.google.android.clockwork.ambient.offload.IDisplayOffloadCallbacks$Stub$Proxy@5c4f6a2]; id=10018
+09-08 11:50:45.801   599   709 I SecDOBrightness: [SecBrightnessOffloadController] loadBrightness(28) > only available while display on
+09-08 11:50:45.801   599  5567 D DisplayOffload: [DisplayOffloadService] sendLayoutLocked(197) > disable in case of systemui
+09-08 11:50:45.802   599  5567 I DisplayControlManager: [DisplayControlManager] updateOffloadStateLocked(152) > srcState: DISPLAY_READY, nextState: OFFLOAD_READY, reseon : LAYOUT_TO_READY
+09-08 11:50:45.802   599  5567 D DisplayControlManager: updateOffloadStateLocked: DISPLAY_READY -> OFFLOAD_READY by LAYOUT_TO_READY
+09-08 11:50:45.803   599   599 D DisplayControlLock: released: DisplayOffload:sendLayout java.lang.Object@ffd3e2
+09-08 11:50:45.805   599   599 I DisplayOffload: [DisplayOffloadService] $r8$lambda$Wiae7z-Rkn0u8meLEXtjJwZAFTc(10) > release updateTopActivitySession also here
+09-08 11:50:45.807   493   493 I displayoffload@2.0-service: [DisplayOffload.cpp:2009] setBrightnessConfigurationFloat > setBrightnessConfigurationFloat: brightenOnTilt(0), wakeOnTilt(0), displayTimeoutMs(15350)
+09-08 11:50:45.809   599   709 E DOHalAdapter: setBrightnessConfiguration: failed, status=UNSUPPORTED_OPERATION
+09-08 11:50:45.810   599   709 I SecDOBrightness: [SecBrightnessOffloadController] loadBrightness(28) > only available while display on
+09-08 11:50:45.979   294   294 I hwservicemanager: getTransport: Cannot find entry android.hardware.memtrack@1.0::IMemtrack/default in either framework or device VINTF manifest.
+09-08 11:50:45.985   294   294 I hwservicemanager: getTransport: Cannot find entry android.hardware.memtrack@1.0::IMemtrack/default in either framework or device VINTF manifest.
+09-08 11:50:45.986 30257 30257 E HidlServiceManagement: Service android.hardware.memtrack@1.0::IMemtrack/default must be in VINTF manifest in order to register/get.
+09-08 11:50:45.986 30257 30257 E LegacySupport: Could not register service android.hardware.memtrack@1.0::IMemtrack/default (-2147483648).
+09-08 11:50:46.102   337  9679 I android.system.suspend-service: !@SystemSuspend: mSuspendCounter-
+09-08 11:50:46.104   337  9679 I android.system.suspend-service: !@SystemSuspend: wakeup_count+
+09-08 11:50:46.105   337  9679 I android.system.suspend-service: !@SystemSuspend: wakeup_count-
+09-08 11:50:46.105   337  9679 I android.system.suspend-service: !@SystemSuspend: mSuspendCounter+
+09-08 11:50:46.105   337  9679 I android.system.suspend-service: !@SystemSuspend: mSuspendCounter-
+09-08 11:50:46.108   337  9679 I android.system.suspend-service: !@SystemSuspend: write mem+
+09-08 11:50:46.109  1106  1106 D AmbientTaskStackManager: checkActiveLocked: timer is within timeout by 3598915ms
+09-08 11:50:46.258   337  9679 I android.system.suspend-service: !@SystemSuspend: write mem-
+09-08 11:50:46.260   337  9679 W libc    : Access denied finding property "suspend.debug.wakestats_log.enabled"
+09-08 11:50:46.263   599  1419 D BatteryService: Sending ACTION_BATTERY_CHANGED: level:36, status:3, health:2, ac:false, usb:false, wireless:false, misc:0x0, charge_type:0, charger_type:0, voltage:3731, temperature:331, online:1, current_avg:-130, hvc:false, capacity:280000, current_event:0x0, current_now:-224, mcc:0, mcv:0, cc:107920, present:true, scale:100, technology:Li-ion
+09-08 11:50:46.267  1106  1106 D PowerUI : onReceive() Received Action =  android.intent.action.BATTERY_CHANGED
+09-08 11:50:46.268  1106  1106 D PowerUI : plugged=false
+09-08 11:50:46.268  1106  1106 I PowerUI : ACTION_BATTERY_CHANGED : mPlugType=0 mBatteryStatus=3
+09-08 11:50:46.268  1106  1106 I PowerUI : oldMisalign : false, curMisalign : false
+09-08 11:50:46.268  1106  1391 I PowerUI : maybeShowBatteryWarningV2 plugged=false bucket=1
+09-08 11:50:46.270  1106  1450 D SYSTEM_UI: BatteryIndicatorPresenter$3.onReceive(19): onReceive() Received Action =  android.intent.action.BATTERY_CHANGED
+09-08 11:50:46.270  1106  1450 D SYSTEM_UI: BatteryIndicatorPresenter$3.onReceive(103): level          36 --> 36
+09-08 11:50:46.270  1106  1450 D SYSTEM_UI: BatteryIndicatorPresenter$3.onReceive(130): status         3 --> 3
+09-08 11:50:46.272   599   599 D AdaptiveBrightnessLongtermModelBuilder: Received android.intent.action.BATTERY_CHANGED
+09-08 11:50:46.280  1135  1135 I NfcWirelessCharge: chargeMode: 0, isWirelessCharging: false
+09-08 11:50:46.336   497   510 E BatteryDump: !@new_battery_dump : 3731,-224,2000,140,36,331,324,DisChg,None,Good,NONE,0,Normal,0,0,8400,853,0,0xdd,0x75,0xa1,0xf5,0x00,0x90,0xc2,0x00,0,0,3740,3811,0,0
+09-08 11:50:46.361   337  9679 I android.system.suspend-service: !@SystemSuspend: wakeup_count+
+09-08 11:50:46.489   599   661 V WindowManager: Transition is created, t=TransitionRecord{39d231d id=-1 type=SLEEP flags=0x0}, caller=com.android.server.wm.RootWindowContainer.sendSleepTransition:12 com.android.server.wm.RootWindowContainer$MyHandler.handleMessage:29 android.os.Handler.dispatchMessage:110 android.os.Looper.loopOnce:272 android.os.Looper.loop:362 
+09-08 11:50:46.489   599   661 D BLASTSyncEngine: SyncGroup is created, id=115, name=Transition-SLEEP, caller=com.android.server.wm.TransitionController.moveToCollecting:78 com.android.server.wm.RootWindowContainer.sendSleepTransition:47 com.android.server.wm.RootWindowContainer$MyHandler.handleMessage:29 android.os.Handler.dispatchMessage:110 android.os.Looper.loopOnce:272 android.os.Looper.loop:362 android.os.HandlerThread.run:85 
+09-08 11:50:46.490   599   661 W BLASTSyncEngine: setSyncMethod, id=115, method=0, caller=com.android.server.wm.TransitionController.moveToCollecting:90 com.android.server.wm.RootWindowContainer.sendSleepTransition:47 com.android.server.wm.RootWindowContainer$MyHandler.handleMessage:29 
+09-08 11:50:46.490   599   661 V WindowManager: Start collecting in Transition: TransitionRecord{39d231d id=115 type=SLEEP flags=0x0}, caller=com.android.server.wm.RootWindowContainer.sendSleepTransition:47 com.android.server.wm.RootWindowContainer$MyHandler.handleMessage:29 android.os.Handler.dispatchMessage:110 android.os.Looper.loopOnce:272 android.os.Looper.loop:362 
+09-08 11:50:46.490   599   661 V WindowManager: Requesting StartTransition: TransitionRecord{39d231d id=115 type=SLEEP flags=0x0}, caller=com.android.server.wm.RootWindowContainer$$ExternalSyntheticLambda42.onCollectStarted:20 com.android.server.wm.RootWindowContainer.sendSleepTransition:50 com.android.server.wm.RootWindowContainer$MyHandler.handleMessage:29 android.os.Handler.dispatchMessage:110 android.os.Looper.loopOnce:272 
+09-08 11:50:46.491   599   661 V SystemTransitions: Transition requested (#115): Token{8f992 TransitionRecord{39d231d id=115 type=SLEEP flags=0x0}}TransitionRequestInfo { type = SLEEP, triggerTask = null, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 115 }
+09-08 11:50:46.491   599   661 V WindowManager: Starting Transition 115, caller=com.android.server.wm.Transition.playNow:101 com.android.server.wm.RootWindowContainer$$ExternalSyntheticLambda42.onCollectStarted:23 com.android.server.wm.RootWindowContainer.sendSleepTransition:50 
+09-08 11:50:46.492   599   661 V WindowManager: SyncGroup 115: Finished!
+09-08 11:50:46.492   599   661 V WindowManager:   Final targets: []
+09-08 11:50:46.492   599   661 V SystemTransitions: onTransitionReady (#115Token{8f992 TransitionRecord{39d231d id=115 type=SLEEP flags=0x40}}: {id=115 t=SLEEP f=0x40 trk=0 r=[] c=[]}
+09-08 11:50:46.492   599   661 V SystemTransitions: No transition roots in (#115) Token{8f992 TransitionRecord{39d231d id=115 type=SLEEP flags=0x40}}@0 so abort
+09-08 11:50:46.493   599   661 I SurfaceControlRegistry: apply, t=StartTransaction_SyncId<115>, caller=android.view.SurfaceControl$Transaction.apply:3277 android.view.SurfaceControl$Transaction.apply:3265 android.view.SurfaceControl$Transaction.apply:3215 com.android.server.wm.SystemTransitions.processReadyQueue:184 com.android.server.wm.SystemTransitions.onAbort:43 com.android.server.wm.SystemTransitions.dispatchReady:191 
+09-08 11:50:46.495   599   661 V SystemTransitions: Transition animation finished (aborted=true, notifying core (#115) Token{8f992 TransitionRecord{39d231d id=115 type=SLEEP flags=0x40}}@0
+09-08 11:50:46.496   599   661 I SurfaceControlRegistry: apply, t=FinishTransaction_SyncId<115>, caller=android.view.SurfaceControl$Transaction.apply:3277 android.view.SurfaceControl$Transaction.apply:3265 android.view.SurfaceControl$Transaction.apply:3215 com.android.server.wm.SystemTransitions.onFinishInner:139 com.android.server.wm.SystemTransitions.onFinish:9 com.android.server.wm.SystemTransitions.processReadyQueue:189 
+09-08 11:50:46.499   599   661 V SystemTransitions: Track 0 became idle
+09-08 11:50:46.499   599   661 V SystemTransitions: All active transition animations finished
+09-08 11:50:46.501   599   661 W Transition: Transition already started id=115 state=2
+09-08 11:50:46.502   599   661 V WindowManager: Finish Transition: TransitionRecord{39d231d id=115 type=SLEEP flags=0x40}, caller=com.android.server.wm.WindowOrganizerController.finishTransition:49 com.android.server.wm.SystemTransitions$$ExternalSyntheticLambda8.run:32 android.os.Handler.handleCallback:995 
+09-08 11:50:46.503   599   658 V WindowManager: Finish Transition (#115): created at 09-08 11:50:46.488 collect-started=2.25ms request-sent=2.916ms started=4.107ms ready=4.097ms sent=4.568ms commit=7.098ms finished=14.982ms
+09-08 11:50:46.768 21048 21048 I BATTERY_TILE_WatchDataLayerManager: onReceive(491): onReceive : update watch view 
+09-08 11:50:46.771 21048 21048 I BATTERY_TILE_WatchDataLayerManager: onReceive(532): Watch battery level : 36
+09-08 11:50:46.771 21048 21048 I BATTERY_TILE_WatchDataLayerManager: onReceive(549): Watch charging state : 0
+09-08 11:50:47.038 30259 30259 W screencap: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: SurfaceFlingerAIDL
+09-08 11:50:47.038 30259 30259 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+09-08 11:50:47.039 30259 30259 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+09-08 11:50:47.040 30259 30259 I SurfaceComposerClient: captureDisplay:Display-4633128672291735937
+09-08 11:50:47.042   517   539 D SurfaceFlinger: captureScreenCommon hasProtectedLayer: 0 allowProtected: 0 supportsProtected: 0
+09-08 11:50:47.046   517   539 D SurfaceFlinger: renderScreenImpl:layers for present - AmbientLiteOverlay-BlackBackground#107
+09-08 11:50:47.046   517   539 D SurfaceFlinger: renderScreenImpl:layers for present - AmbientLiteOverlay-TaskSnapshotContainer#105
+09-08 11:50:47.046   517   539 D SurfaceFlinger: renderScreenImpl:layers for present - SystemUIOverlay[StatusSurfaceLayer,KeyguardLayer,AodLayer,AodSurfaceLayer]#636
+09-08 11:50:47.047   517   539 E HWComposer: getLuts: getLuts failed for display 4633128672291735937: UNSUPPORTED (8)
+09-08 11:50:47.097  3448  3715 W MediaProvider: isAppCloneUserPair failed. Users: 0 and 0
+09-08 11:50:47.097  3448  3715 W MediaProvider: isAppCloneUserPair for user 0: false
+09-08 11:50:47.110 29896 29896 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1274 android.content.ContextWrapper.sendBroadcast:511 d.b.onChange:65 android.database.ContentObserver.onChange:184 android.database.ContentObserver.onChange:202 
+09-08 11:50:47.126 30163 30163 I [SSW]SyncEventReceiver: start action : com.sec.android.easyMover.action.REQUEST_SYNC_IMAGE_FILE
+09-08 11:50:47.126 30163 30163 I [SSW]SystemInfoUtil: isStandaloneWatch: false
+09-08 11:50:47.126 30163 30163 I [SSW]SyncQueue: addJob
+09-08 11:50:47.126 30163 30163 I [SSW]SyncQueue: reserveAlarm - (event(PHOTO)) at 2026-09-08T11:53:47.126472+03:00[Europe/Bucharest], attemptCount : 0, attemptCountWakeUp : 0
+09-08 11:50:47.317   599  3050 I ActivityManager: Broadcasting: Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x400000 }
+09-08 11:50:47.319   599  3050 I ActivityManager: Enqueued broadcast Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x400000 }: 0
+09-08 11:50:47.321   599  1419 W JobInfo : Job 'com.android.providers.media.module/com.android.providers.media.MediaService#-300' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+09-08 11:50:47.336   599   658 I ActivityManager: Broadcast completed: result=0
+09-08 11:50:47.339  3448  4579 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+09-08 11:50:47.382  3448  4579 I MediaProvider: End Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///... flg=0x1400010 cmp=com.android.providers.media.module/com.android.providers.media.MediaService }
+09-08 11:50:47.390   599  1036 I Pageboost: Launcher App Execution
+09-08 11:50:47.418  3448  3538 D WM-SystemJobScheduler: Scheduling work ID 11893a33-05bb-4f69-b1d2-e5f89d682b08Job ID 285
+09-08 11:50:47.421   599  3517 E TaskPersister: File error accessing recents directory (directory doesn't exist?).

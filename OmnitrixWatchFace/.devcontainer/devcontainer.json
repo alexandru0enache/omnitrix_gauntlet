@@ -1,0 +1,13 @@
+{
+  "name": "omnitrix-watchface-build",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "postCreateCommand": "chmod +x gradlew",
+  "remoteEnv": {
+    "JAVA_HOME": "/opt/java/openjdk"
+  }
+}

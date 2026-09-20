@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"22d82e6b75d2fc81","x":520,"y":1520,"width":1111,"height":603,"type":"group","label":"gauntlets_visuals"},
+		{"id":"aa35c0b2309ce81f","x":-76,"y":1520,"width":516,"height":440,"type":"file","file":"moodboard_folder/synthesis.md"},
+		{"id":"537a5f68fa89e1a0","x":-640,"y":1520,"width":520,"height":440,"type":"file","file":"moodboard_folder/ideas.md"}
+	],
+	"edges":[]
+}

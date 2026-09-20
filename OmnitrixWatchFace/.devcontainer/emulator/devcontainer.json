@@ -1,0 +1,11 @@
+{
+  "name": "omnitrix-watchface-emulator (experimental)",
+  "build": {
+    "dockerfile": "Dockerfile.emulator",
+    "context": "../.."
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "postCreateCommand": "chmod +x gradlew",
+  "runArgs": []
+}

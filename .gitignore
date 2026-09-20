@@ -1,0 +1,29 @@
+# Python venv
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Android / Gradle (covers OmnitrixWatchFace/ nested project)
+.gradle/
+build/
+captures/
+.cxx/
+.externalNativeBuild/
+local.properties
+*.iml
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Obsidian
+.obsidian/
+
+# Design tool auto-save (Adobe After Effects recovery frames)
+Adobe After Effects Auto-Save/

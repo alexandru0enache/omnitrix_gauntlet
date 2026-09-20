@@ -1,0 +1,19 @@
+[versions]
+agp = "9.3.0"
+coreKtx = "1.13.1"
+wearWatchface = "1.2.1"
+healthServicesClient = "1.0.0"
+healthConnectClient = "1.1.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-health-services-client = { group = "androidx.health", name = "health-services-client", version.ref = "healthServicesClient" }
+androidx-health-connect-client = { group = "androidx.health.connect", name = "connect-client", version.ref = "healthConnectClient" }
+wear-watchface = { group = "androidx.wear.watchface", name = "watchface", version.ref = "wearWatchface" }
+wear-watchface-complications-rendering = { group = "androidx.wear.watchface", name = "watchface-complications-rendering", version.ref = "wearWatchface" }
+wear-watchface-complications-data-source-ktx = { group = "androidx.wear.watchface", name = "watchface-complications-data-source-ktx", version.ref = "wearWatchface" }
+wear-watchface-editor = { group = "androidx.wear.watchface", name = "watchface-editor", version.ref = "wearWatchface" }
+wear-watchface-style = { group = "androidx.wear.watchface", name = "watchface-style", version.ref = "wearWatchface" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }

@@ -1,0 +1,66 @@
+# EXPERIMENTAL — unverified end-to-end (authored without Docker installed
+# on the target machine; first build will likely need iteration).
+#
+# Bundles a full Wear OS emulator + system image inside the container.
+# Real hardware acceleration requires `docker run --device /dev/kvm ...`,
+# which only works if the Docker/WSL2 host actually exposes /dev/kvm — not
+# guaranteed on Windows. Without it, the emulator falls back to slow
+# software rendering (`-accel auto` handles this automatically; it will
+# just be considerably slower to boot).
+#
+# Separately: the android-33 android-wear x86_64 system image itself has a
+# known image-decoder bug in WearServices' own preview-thumbnail compositor
+# (unrelated to containerization — reproduces identically on the host).
+# It doesn't block the watch face from actually rendering once bound as the
+# active wallpaper, only the picker's thumbnail generation.
+#
+# Recommended default instead: build with the lean Dockerfile in the parent
+# directory and bridge its adb to an emulator/device already running on the
+# host via ADB_SERVER_SOCKET=tcp:host.docker.internal:5037. Reach for this
+# image only if you specifically want the emulator fully inside the container.
+
+FROM eclipse-temurin:17-jdk-jammy
+
+ENV ANDROID_HOME=/opt/android-sdk \
+    ANDROID_SDK_ROOT=/opt/android-sdk \
+    DEBIAN_FRONTEND=noninteractive
+
+# Headless-Qt + software-rendering runtime deps the emulator binary dlopens
+# even with -no-window. Compiled from community docker-android-emulator
+# images; not verified against this exact emulator build.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        unzip curl \
+        libgl1 libglu1-mesa libpulse0 libnss3 libnspr4 \
+        libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 \
+        libxi6 libxrender1 libxtst6 libasound2 libatk-bridge2.0-0 \
+        libgtk-3-0 libgbm1 libdbus-1-3 \
+        libqt5core5a libqt5gui5 libqt5widgets5 libqt5concurrent5 \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p "$ANDROID_HOME/cmdline-tools" \
+    && curl -sL -o /tmp/cmdline-tools.zip \
+        "https://dl.google.com/android/repository/commandlinetools-linux-16111833_latest.zip" \
+    && unzip -q /tmp/cmdline-tools.zip -d "$ANDROID_HOME/cmdline-tools" \
+    && mv "$ANDROID_HOME/cmdline-tools/cmdline-tools" "$ANDROID_HOME/cmdline-tools/latest" \
+    && rm /tmp/cmdline-tools.zip
+
+ENV PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH
+
+RUN yes | sdkmanager --licenses > /dev/null \
+    && sdkmanager \
+        "platform-tools" \
+        "platforms;android-35" \
+        "build-tools;35.0.0" \
+        "emulator" \
+        "system-images;android-33;android-wear;x86_64"
+
+RUN echo "no" | avdmanager create avd \
+        -n OmnitrixSpike \
+        -k "system-images;android-33;android-wear;x86_64" \
+        --device "wearos_large_round" \
+        --force
+
+WORKDIR /workspace
+
+CMD ["emulator", "-avd", "OmnitrixSpike", "-no-window", "-no-audio", "-no-boot-anim", \
+     "-gpu", "swiftshader_indirect", "-accel", "auto"]
