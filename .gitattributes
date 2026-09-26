@@ -1,0 +1,7 @@
+# Git LFS configuration for large image sequences
+
+# Background animation frames (~10,800 total)
+assets/backgrounds/**/*.png filter=lfs diff=lfs merge=lfs -text
+
+# Transition animation frames (~2,800 total)
+assets/transitions/**/*.png filter=lfs diff=lfs merge=lfs -text

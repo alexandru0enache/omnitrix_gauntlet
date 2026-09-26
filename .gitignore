@@ -25,5 +25,22 @@ Desktop.ini
 # Obsidian
 .obsidian/
 
-# Design tool auto-save (Adobe After Effects recovery frames)
-Adobe After Effects Auto-Save/
+# AE / AME workspace (moved from root)
+ae-autosave/
+_export/
+
+# Obsidian / notes
+docs/.trash/
+docs/.obsidian/
+.obsidian/
+
+# Blender auto-saves
+*.blend1
+
+# Build logs
+*.logcat*
+*.log
+logs/
+
+# Empty / unused dirs
+watchface-style_classes/

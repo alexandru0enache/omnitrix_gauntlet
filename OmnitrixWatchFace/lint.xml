@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Baseline lint issues to suppress for this watch face project -->
+
+    <!-- Ignore missing translation strings (not localized) -->
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="ExtraText" severity="ignore" />
+
+    <!-- Ignore icon-related issues for custom drawables -->
+    <issue id="IconDuplicates" severity="ignore" />
+    <issue id="IconDipSize" severity="ignore" />
+    <issue id="ContentDescription" severity="ignore" />
+
+    <!-- Allow hardcoded text for watch face labels -->
+    <issue id="HardcodedText" severity="ignore" />
+
+    <!-- Ignore unused resources (some drawables referenced dynamically) -->
+    <issue id="UnusedResources" severity="ignore" />
+
+    <!-- Allow large PNGs in drawable-nodpi -->
+    <issue id="AllowBackup" severity="ignore" />
+</lint>

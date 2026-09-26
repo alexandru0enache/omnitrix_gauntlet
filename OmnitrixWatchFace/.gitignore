@@ -8,3 +8,16 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Logcat / debug output
+*.logcat*
+*.log
+logcat_dump.txt
+
+# Additional Android artifacts
+*.apk
+*.apks
+*.aab
+*.dex
+*.jks
+*.keystore
