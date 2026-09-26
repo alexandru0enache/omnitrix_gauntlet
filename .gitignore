@@ -37,6 +37,9 @@ docs/.obsidian/
 # Blender auto-saves
 *.blend1
 
+# AE auto-saves (nested in assets too)
+**/Adobe After Effects Auto-Save/
+
 # Build logs
 *.logcat*
 *.log
