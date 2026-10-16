@@ -40,6 +40,10 @@ docs/.obsidian/
 # AE auto-saves (nested in assets too)
 **/Adobe After Effects Auto-Save/
 
+# Render output image frames — NOT version controlled
+assets/backgrounds/**/*.png
+assets/transitions/**/*.png
+
 # Build logs
 *.logcat*
 *.log

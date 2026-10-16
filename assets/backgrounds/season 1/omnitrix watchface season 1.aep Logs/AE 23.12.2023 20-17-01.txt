@@ -1,17 +1,0 @@
-Adobe After Effects v18.4.1 Windows 64 render log for project “omnitrix watchface season 1.aep”
-
-Rendering started on 23.12.2023 at 20:17:01
-
-  23.12.2023 20:17:01: Starting composition “AOD”.
-
-  Output To: E:\Editing\Projects\Ae Projects\Watchfaces\omnitrix watchface\season 1\AOD_[#####].png    23.12.2023 20:17:01: Finished composition “AOD”.
-
-
-  23.12.2023 20:17:01: Starting composition “AOD transition + BG WATCH final”.
-
-  Output To: E:\Editing\Projects\Ae Projects\Watchfaces\omnitrix watchface\season 1\AOD transition + BG WATCH final\AOD transition + BG WATCH final_[#####].png    23.12.2023 20:17:48: Finished composition “AOD transition + BG WATCH final”.
-
-
-  Total Time Elapsed: 47 Seconds
-Log closed on 23.12.2023 at 20:17:48
-
